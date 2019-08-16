@@ -1,0 +1,56 @@
+\begin{Verbatim}[commandchars=\\\{\}]
+\PYG{k}{def} \PYG{n+nf}{mann\PYGZus{}whitney\PYGZus{}u}\PYG{p}{(}\PYG{n}{data1}\PYG{p}{,} \PYG{n}{data2}\PYG{p}{):}
+    \PYG{c+c1}{\PYGZsh{} Get sorted data}
+    \PYG{n}{data1} \PYG{o}{=} \PYG{n+nb}{sorted}\PYG{p}{(}\PYG{n}{data1}\PYG{p}{)}
+    \PYG{n}{data2} \PYG{o}{=} \PYG{n+nb}{sorted}\PYG{p}{(}\PYG{n}{data2}\PYG{p}{)}
+
+    \PYG{c+c1}{\PYGZsh{} Get numbers of observations}
+    \PYG{n}{n1} \PYG{o}{=} \PYG{n+nb}{len}\PYG{p}{(}\PYG{n}{data1}\PYG{p}{)}
+    \PYG{n}{n2} \PYG{o}{=} \PYG{n+nb}{len}\PYG{p}{(}\PYG{n}{data2}\PYG{p}{)}
+    \PYG{n}{max\PYGZus{}rank} \PYG{o}{=} \PYG{n+nb}{len}\PYG{p}{(}\PYG{n}{data1}\PYG{p}{)} \PYG{o}{+} \PYG{n+nb}{len}\PYG{p}{(}\PYG{n}{data2}\PYG{p}{)}
+
+    \PYG{c+c1}{\PYGZsh{} Placeholders to keep the ranks}
+    \PYG{n}{ranks1} \PYG{o}{=} \PYG{p}{[]}
+    \PYG{n}{ranks2} \PYG{o}{=} \PYG{p}{[]}
+    \PYG{n}{current\PYGZus{}rank} \PYG{o}{=} \PYG{l+m+mi}{1}
+
+    \PYG{c+c1}{\PYGZsh{} Place rank in correct holder}
+    \PYG{k}{while} \PYG{n}{current\PYGZus{}rank} \PYG{o}{\PYGZlt{}=} \PYG{n}{max\PYGZus{}rank}\PYG{p}{:}
+        \PYG{k}{if} \PYG{n+nb}{len}\PYG{p}{(}\PYG{n}{data2}\PYG{p}{)} \PYG{o}{==} \PYG{l+m+mi}{0}\PYG{p}{:}
+            \PYG{n}{ranks1}\PYG{o}{.}\PYG{n}{append}\PYG{p}{(}\PYG{n}{current\PYGZus{}rank}\PYG{p}{)}
+            \PYG{n}{current\PYGZus{}rank} \PYG{o}{+=} \PYG{l+m+mi}{1}
+            \PYG{n}{data1}\PYG{o}{.}\PYG{n}{pop}\PYG{p}{(}\PYG{l+m+mi}{0}\PYG{p}{)}
+        \PYG{k}{elif} \PYG{n+nb}{len}\PYG{p}{(}\PYG{n}{data1}\PYG{p}{)} \PYG{o}{==} \PYG{l+m+mi}{0}\PYG{p}{:}
+            \PYG{n}{ranks2}\PYG{o}{.}\PYG{n}{append}\PYG{p}{(}\PYG{n}{current\PYGZus{}rank}\PYG{p}{)}
+            \PYG{n}{current\PYGZus{}rank} \PYG{o}{+=} \PYG{l+m+mi}{1}
+            \PYG{n}{data2}\PYG{o}{.}\PYG{n}{pop}\PYG{p}{(}\PYG{l+m+mi}{0}\PYG{p}{)}
+        \PYG{k}{else}\PYG{p}{:}
+            \PYG{k}{if} \PYG{n}{data1}\PYG{p}{[}\PYG{l+m+mi}{0}\PYG{p}{]} \PYG{o}{==} \PYG{n}{data2}\PYG{p}{[}\PYG{l+m+mi}{0}\PYG{p}{]:}
+                \PYG{n}{ranks1}\PYG{o}{.}\PYG{n}{append}\PYG{p}{(}\PYG{n}{current\PYGZus{}rank} \PYG{o}{+} \PYG{l+m+mf}{0.5}\PYG{p}{)}
+                \PYG{n}{ranks2}\PYG{o}{.}\PYG{n}{append}\PYG{p}{(}\PYG{n}{current\PYGZus{}rank} \PYG{o}{+} \PYG{l+m+mf}{0.5}\PYG{p}{)}
+                \PYG{n}{current\PYGZus{}rank} \PYG{o}{+=} \PYG{l+m+mi}{2}
+                \PYG{n}{data1}\PYG{o}{.}\PYG{n}{pop}\PYG{p}{(}\PYG{l+m+mi}{0}\PYG{p}{)}
+                \PYG{n}{data2}\PYG{o}{.}\PYG{n}{pop}\PYG{p}{(}\PYG{l+m+mi}{0}\PYG{p}{)}
+            \PYG{k}{elif} \PYG{n}{data1}\PYG{p}{[}\PYG{l+m+mi}{0}\PYG{p}{]} \PYG{o}{\PYGZlt{}} \PYG{n}{data2}\PYG{p}{[}\PYG{l+m+mi}{0}\PYG{p}{]:}
+                \PYG{n}{ranks1}\PYG{o}{.}\PYG{n}{append}\PYG{p}{(}\PYG{n}{current\PYGZus{}rank}\PYG{p}{)}
+                \PYG{n}{current\PYGZus{}rank} \PYG{o}{+=} \PYG{l+m+mi}{1}
+                \PYG{n}{data1}\PYG{o}{.}\PYG{n}{pop}\PYG{p}{(}\PYG{l+m+mi}{0}\PYG{p}{)}
+            \PYG{k}{elif} \PYG{n}{data2}\PYG{p}{[}\PYG{l+m+mi}{0}\PYG{p}{]} \PYG{o}{\PYGZlt{}} \PYG{n}{data1}\PYG{p}{[}\PYG{l+m+mi}{0}\PYG{p}{]:}
+                \PYG{n}{ranks2}\PYG{o}{.}\PYG{n}{append}\PYG{p}{(}\PYG{n}{current\PYGZus{}rank}\PYG{p}{)}
+                \PYG{n}{current\PYGZus{}rank} \PYG{o}{+=} \PYG{l+m+mi}{1}
+                \PYG{n}{data2}\PYG{o}{.}\PYG{n}{pop}\PYG{p}{(}\PYG{l+m+mi}{0}\PYG{p}{)}
+
+    \PYG{c+c1}{\PYGZsh{} Get rank sums and U statistic}
+    \PYG{n}{R1} \PYG{o}{=} \PYG{n+nb}{sum}\PYG{p}{(}\PYG{n}{ranks1}\PYG{p}{)}
+    \PYG{n}{R2} \PYG{o}{=} \PYG{n+nb}{sum}\PYG{p}{(}\PYG{n}{ranks2}\PYG{p}{)}
+    \PYG{n}{U1} \PYG{o}{=} \PYG{n}{R1} \PYG{o}{\PYGZhy{}} \PYG{p}{((}\PYG{n}{n1} \PYG{o}{*} \PYG{p}{(}\PYG{n}{n1} \PYG{o}{+} \PYG{l+m+mi}{1}\PYG{p}{))} \PYG{o}{/} \PYG{l+m+mi}{2}\PYG{p}{)}
+    \PYG{n}{U2} \PYG{o}{=} \PYG{n}{R2} \PYG{o}{\PYGZhy{}} \PYG{p}{((}\PYG{n}{n2} \PYG{o}{*} \PYG{p}{(}\PYG{n}{n2} \PYG{o}{+} \PYG{l+m+mi}{1}\PYG{p}{))} \PYG{o}{/} \PYG{l+m+mi}{2}\PYG{p}{)}
+    \PYG{n}{U} \PYG{o}{=} \PYG{n+nb}{min}\PYG{p}{(}\PYG{n}{U1}\PYG{p}{,} \PYG{n}{U2}\PYG{p}{)}
+
+    \PYG{c+c1}{\PYGZsh{} Normal approximation}
+    \PYG{n}{mu} \PYG{o}{=} \PYG{p}{(}\PYG{n}{n1} \PYG{o}{*} \PYG{n}{n2}\PYG{p}{)} \PYG{o}{/} \PYG{l+m+mi}{2}
+    \PYG{n}{sg} \PYG{o}{=} \PYG{p}{((}\PYG{n}{n1} \PYG{o}{*} \PYG{n}{n2} \PYG{o}{*} \PYG{p}{(}\PYG{n}{n1} \PYG{o}{+} \PYG{n}{n2} \PYG{o}{+} \PYG{l+m+mi}{1}\PYG{p}{))} \PYG{o}{/} \PYG{l+m+mi}{12}\PYG{p}{)} \PYG{o}{**} \PYG{l+m+mf}{0.5}
+    \PYG{n}{z} \PYG{o}{=} \PYG{p}{(}\PYG{n}{U} \PYG{o}{\PYGZhy{}} \PYG{n}{mu}\PYG{p}{)} \PYG{o}{/} \PYG{n}{sg}
+    \PYG{n}{p\PYGZus{}val} \PYG{o}{=} \PYG{n}{scipy}\PYG{o}{.}\PYG{n}{stats}\PYG{o}{.}\PYG{n}{norm}\PYG{p}{(}\PYG{l+m+mi}{0}\PYG{p}{,} \PYG{l+m+mi}{1}\PYG{p}{)}\PYG{o}{.}\PYG{n}{cdf}\PYG{p}{(}\PYG{n}{z}\PYG{p}{)}
+    \PYG{k}{return} \PYG{n}{p\PYGZus{}val}
+\end{Verbatim}

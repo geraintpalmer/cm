@@ -1,0 +1,82 @@
+\begin{Verbatim}[commandchars=\\\{\}]
+\PYG{k+kn}{import} \PYG{n+nn}{random}
+
+
+\PYG{k}{def} \PYG{n+nf}{simulate\PYGZus{}queue}\PYG{p}{(}
+        \PYG{n}{arrival\PYGZus{}rate}\PYG{p}{,}
+        \PYG{n}{service\PYGZus{}rate}\PYG{p}{,}
+        \PYG{n}{number\PYGZus{}of\PYGZus{}staff}\PYG{p}{,}
+        \PYG{n}{time\PYGZus{}period}\PYG{p}{,} \PYG{n}{limit}\PYG{p}{):}
+    \PYG{l+s+sd}{\PYGZdq{}\PYGZdq{}\PYGZdq{}}
+\PYG{l+s+sd}{    Simulates one run of a queue and returns the proportion of customers}
+\PYG{l+s+sd}{    waiting over a given limit. The parameters are:}
+
+\PYG{l+s+sd}{    + arrival\PYGZus{}rate}
+\PYG{l+s+sd}{    + service\PYGZus{}rate}
+\PYG{l+s+sd}{    + number\PYGZus{}of\PYGZus{}staff}
+\PYG{l+s+sd}{    + time\PYGZus{}period}
+\PYG{l+s+sd}{    + limit}
+\PYG{l+s+sd}{    \PYGZdq{}\PYGZdq{}\PYGZdq{}}
+    \PYG{n}{number\PYGZus{}of\PYGZus{}customers} \PYG{o}{=} \PYG{l+m+mi}{0}
+    \PYG{n}{number\PYGZus{}over\PYGZus{}limit} \PYG{o}{=} \PYG{l+m+mi}{0}
+    \PYG{n}{now} \PYG{o}{=} \PYG{l+m+mi}{0}
+    \PYG{n}{server\PYGZus{}available\PYGZus{}dates} \PYG{o}{=} \PYG{p}{[}\PYG{l+m+mi}{0}\PYG{p}{]} \PYG{o}{*} \PYG{n}{number\PYGZus{}of\PYGZus{}staff}
+    \PYG{n}{service\PYGZus{}times} \PYG{o}{=} \PYG{p}{[]}
+
+    \PYG{k}{while} \PYG{n}{now} \PYG{o}{\PYGZlt{}} \PYG{n}{time\PYGZus{}period}\PYG{p}{:}
+        \PYG{n}{inter\PYGZus{}arrival\PYGZus{}time} \PYG{o}{=} \PYG{n}{random}\PYG{o}{.}\PYG{n}{expovariate}\PYG{p}{(}\PYG{n}{arrival\PYGZus{}rate}\PYG{p}{)}
+        \PYG{n}{now} \PYG{o}{+=} \PYG{n}{inter\PYGZus{}arrival\PYGZus{}time}
+        \PYG{n}{number\PYGZus{}of\PYGZus{}customers} \PYG{o}{+=} \PYG{l+m+mi}{1}
+
+        \PYG{n}{service\PYGZus{}start\PYGZus{}date} \PYG{o}{=} \PYG{n+nb}{max}\PYG{p}{(}\PYG{n}{now}\PYG{p}{,} \PYG{n+nb}{min}\PYG{p}{(}\PYG{n}{server\PYGZus{}available\PYGZus{}dates}\PYG{p}{))}
+
+        \PYG{n}{service\PYGZus{}time} \PYG{o}{=} \PYG{n}{random}\PYG{o}{.}\PYG{n}{expovariate}\PYG{p}{(}\PYG{n}{service\PYGZus{}rate}\PYG{p}{)}
+        \PYG{n}{service\PYGZus{}end\PYGZus{}date} \PYG{o}{=} \PYG{n}{service\PYGZus{}start\PYGZus{}date} \PYG{o}{+} \PYG{n}{service\PYGZus{}time}
+
+        \PYG{n}{server\PYGZus{}available\PYGZus{}dates}\PYG{o}{.}\PYG{n}{append}\PYG{p}{(}\PYG{n}{service\PYGZus{}end\PYGZus{}date}\PYG{p}{)}
+        \PYG{n}{server\PYGZus{}available\PYGZus{}dates}\PYG{o}{.}\PYG{n}{sort}\PYG{p}{()}
+        \PYG{n}{server\PYGZus{}available\PYGZus{}dates} \PYG{o}{=} \PYG{n}{server\PYGZus{}available\PYGZus{}dates}\PYG{p}{[}\PYG{o}{\PYGZhy{}}\PYG{n}{number\PYGZus{}of\PYGZus{}staff}\PYG{p}{:]}
+
+        \PYG{n}{wait} \PYG{o}{=} \PYG{n}{service\PYGZus{}start\PYGZus{}date} \PYG{o}{\PYGZhy{}} \PYG{n}{now}
+        \PYG{k}{if} \PYG{n}{wait} \PYG{o}{\PYGZgt{}} \PYG{n}{limit}\PYG{p}{:}
+            \PYG{n}{number\PYGZus{}over\PYGZus{}limit} \PYG{o}{+=} \PYG{l+m+mi}{1}
+
+    \PYG{k}{return} \PYG{n}{number\PYGZus{}over\PYGZus{}limit} \PYG{o}{/} \PYG{n}{number\PYGZus{}of\PYGZus{}customers}
+
+
+
+
+\PYG{k}{def} \PYG{n+nf}{get\PYGZus{}proportion\PYGZus{}waiting\PYGZus{}over\PYGZus{}limit}\PYG{p}{(}
+    \PYG{n}{arrival\PYGZus{}rate}\PYG{o}{=}\PYG{l+m+mf}{1.5}\PYG{p}{,}
+    \PYG{n}{service\PYGZus{}rate}\PYG{o}{=}\PYG{l+m+mf}{0.15}\PYG{p}{,}
+    \PYG{n}{number\PYGZus{}of\PYGZus{}staff}\PYG{o}{=}\PYG{l+m+mi}{10}\PYG{p}{,}
+    \PYG{n}{limit}\PYG{o}{=}\PYG{l+m+mf}{0.5}\PYG{p}{,}
+    \PYG{n}{time\PYGZus{}period}\PYG{o}{=}\PYG{l+m+mi}{31}\PYG{o}{*}\PYG{l+m+mi}{24}\PYG{p}{,}
+    \PYG{n}{number\PYGZus{}of\PYGZus{}repetitions}\PYG{o}{=}\PYG{l+m+mi}{100}\PYG{p}{):}
+    \PYG{l+s+sd}{\PYGZdq{}\PYGZdq{}\PYGZdq{}}
+\PYG{l+s+sd}{    Gives the average proportion of customers waiting over a given limit,}
+\PYG{l+s+sd}{    over number\PYGZus{}of\PYGZus{}repetitions repetitions. The parameters are:}
+
+\PYG{l+s+sd}{    + arrival\PYGZus{}rate}
+\PYG{l+s+sd}{    + service\PYGZus{}rate}
+\PYG{l+s+sd}{    + number\PYGZus{}of\PYGZus{}staff}
+\PYG{l+s+sd}{    + time\PYGZus{}period}
+\PYG{l+s+sd}{    + limit}
+\PYG{l+s+sd}{    + number\PYGZus{}of\PYGZus{}repetitions}
+\PYG{l+s+sd}{    \PYGZdq{}\PYGZdq{}\PYGZdq{}}
+    \PYG{n}{proportions} \PYG{o}{=} \PYG{p}{[]}
+    \PYG{k}{for} \PYG{n}{repetition} \PYG{o+ow}{in} \PYG{n+nb}{range}\PYG{p}{(}\PYG{n}{number\PYGZus{}of\PYGZus{}repetitions}\PYG{p}{):}
+        \PYG{n}{proportions}\PYG{o}{.}\PYG{n}{append}\PYG{p}{(}
+            \PYG{n}{simulate\PYGZus{}queue}\PYG{p}{(}
+                \PYG{n}{arrival\PYGZus{}rate}\PYG{o}{=}\PYG{n}{arrival\PYGZus{}rate}\PYG{p}{,}
+                \PYG{n}{service\PYGZus{}rate}\PYG{o}{=}\PYG{n}{service\PYGZus{}rate}\PYG{p}{,}
+                \PYG{n}{number\PYGZus{}of\PYGZus{}staff}\PYG{o}{=}\PYG{n}{number\PYGZus{}of\PYGZus{}staff}\PYG{p}{,}
+                \PYG{n}{limit}\PYG{o}{=}\PYG{n}{limit}\PYG{p}{,}
+                \PYG{n}{time\PYGZus{}period}\PYG{o}{=}\PYG{n}{time\PYGZus{}period}\PYG{p}{))}
+    \PYG{k}{return} \PYG{n+nb}{sum}\PYG{p}{(}\PYG{n}{proportions}\PYG{p}{)} \PYG{o}{/} \PYG{n+nb}{len}\PYG{p}{(}\PYG{n}{proportions}\PYG{p}{)}
+
+
+
+
+\PYG{n}{get\PYGZus{}proportion\PYGZus{}waiting\PYGZus{}over\PYGZus{}limit}\PYG{p}{()}
+\end{Verbatim}

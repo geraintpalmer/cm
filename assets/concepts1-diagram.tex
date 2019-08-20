@@ -1,0 +1,156 @@
+\documentclass[border={10pt, 10pt, 10pt, 10pt}]{standalone}
+
+\usepackage{tikz}
+\usepackage{graphicx}
+\usepackage{varwidth}
+
+\renewcommand\familydefault{\sfdefault}
+
+\begin{document}
+\begin{tikzpicture}
+
+\node at (0, 0) {\includegraphics{concepts1.pdf}};
+
+%%%%%%%%%%%%%
+% LEFT SIDE %
+%%%%%%%%%%%%%
+
+% VARIABLES
+\draw[ultra thick, draw=red!50!black] (2.5, 11.75) -- (-7.25, 11.75) -- (-7.25, 8.75) -- (2.5, 8.75);
+
+% WHILE
+\draw[ultra thick, draw=blue!50!black] (-7.25, 6) -- (-7.25, 8.5) -- (-5.5, 8.5);
+\draw[ultra thick, dashed, draw=blue!50!black] (-7.25, 6) -- (-7.25, 5);
+\draw[ultra thick, dotted, draw=blue!50!black] (-7.25, 5) -- (-7.25, 4);
+
+% IF
+\draw[ultra thick, draw=green!50!black] (-4.5, 0.5) -- (-7.25, 0.5) -- (-7.25, -0.5) -- (-4.5, -0.5);
+
+% FUNCTIONS
+\draw[ultra thick, draw=magenta!50!black] (-7.25, 16.5) -- (-7.25, 19.75) -- (-5, 19.75);
+\draw[ultra thick, dashed, draw=magenta!50!black] (-7.25, 16.5) -- (-7.25, 15);
+\draw[ultra thick, dotted, draw=magenta!50!black] (-7.25, 15) -- (-7.25, 14);
+
+\draw[ultra thick, draw=magenta!50!black] (-7.25, -5.5) -- (-7.25, -3.5) -- (-5, -3.5);
+\draw[ultra thick, dashed, draw=magenta!50!black] (-7.25, -5.5) -- (-7.25, -7);
+\draw[ultra thick, dotted, draw=magenta!50!black] (-7.25, -7) -- (-7.25, -8);
+
+\draw[ultra thick, draw=magenta!50!black] (-4.5, -20.6) -- (-7.25, -20.6) -- (-7.25, -21.1) -- (-4.5, -21.1);
+
+
+
+
+%%%%%%%%%%%%%%
+% RIGHT SIDE %
+%%%%%%%%%%%%%%
+
+% LISTS
+\draw[ultra thick, draw=orange!50!black] (2.5, 1.35) -- (7.5, 1.35) -- (7.5, 3.35) -- (2.5, 3.35);
+\draw[ultra thick, draw=orange!50!black] (-6.4, -13.1) -- (-1.5, -13.1) -- (-1.5, -13.65) -- (-6.4, -13.65);
+\draw[ultra thick, draw=orange!50!black] (-6.4, -17.95) -- (3, -17.95) -- (3, -18.5) -- (-6.4, -18.5);
+
+% FOR
+\draw[ultra thick, draw=yellow!50!black] (-6.4, -13.75) -- (4, -13.75) -- (4, -17.85) -- (-6.4, -17.85);
+
+% BOOLEANS
+\draw[ultra thick, draw=cyan!50!black] (-2.5, 0.5) -- (-2.5, 0) -- (-5, 0);
+
+
+%% BOXES
+\draw[ultra thick, draw=red!50!black, fill=red!10!white] (-24, 21.5) rectangle (-14, 11.5);
+\draw[ultra thick, draw=green!50!black, fill=green!10!white] (-24, 10.5) rectangle (-14, 0.5);
+\draw[ultra thick, draw=blue!50!black, fill=blue!10!white] (-24, -0.5) rectangle (-14, -10.5);
+\draw[ultra thick, draw=magenta!50!black, fill=magenta!10!white] (-24, -11.5) rectangle (-14, -21.5);
+
+\draw[ultra thick,  draw=cyan!50!black, fill=cyan!10!white] (24, 21.5) rectangle (14, 11.5);
+\draw[ultra thick, draw=orange!50!black, fill=orange!10!white] (24, 10.5) rectangle (14, 0.5);
+\draw[ultra thick, draw=yellow!50!black, fill=yellow!10!white] (24, -0.5) rectangle (14, -10.5);
+\draw[ultra thick, fill=black!10!white] (24, -11.5) rectangle (14, -21.5);
+
+%% STEMS
+\draw[ultra thick, draw=red!50!black] (-7.25, 10.25) -- (-8.6, 10.25) -- (-8.6, 16.5) -- (-14, 16.5); % variables
+\draw[ultra thick, draw=blue!50!black] (-7.25, 7.25) -- (-11.3, 7.25) -- (-11.3, -5.5) -- (-14, -5.5); % while
+\draw[ultra thick, draw=green!50!black] (-7.25, 0) -- (-12.65, 0) -- (-12.65, 5.5) -- (-14, 5.5); % if
+\draw[ultra thick, draw=magenta!50!black] (-7.25, 18) -- (-9.95, 18) -- (-9.95, -16.5) -- (-14, -16.5); % functions
+\draw[ultra thick, draw=magenta!50!black] (-7.25, -4.5) -- (-9.95, -4.5); % functions
+\draw[ultra thick, draw=magenta!50!black] (-7.25, -20.85) -- (-9.95, -20.85) -- (-9.95, -16.5); % functions
+
+\draw[ultra thick, draw=cyan!50!black] (-2.5, 0.25) -- (9.95, 0.25) -- (9.95, 16.5) -- (14, 16.5); % booleans
+\draw[ultra thick, draw=orange!50!black] (7.5, 2.35) -- (8.6, 2.35) -- (8.6, 5.5) -- (14, 5.5); % lists
+\draw[ultra thick, draw=orange!50!black] (-1.5, -13.375) -- (8.6, -13.375); % lists
+\draw[ultra thick, draw=orange!50!black] (3, -18.225) -- (8.6, -18.225) -- (8.6, 2.35); % lists
+\draw[ultra thick, draw=yellow!50!black] (4, -15.8) -- (11.3, -15.8) -- (11.3, -5.5) -- (14, -5.5); % for
+
+
+%% TITLES/TEXT
+\node[text=red!50!black] at (-19, 20.5) {\huge VARIABLES};
+\node at (-19.5, 18) {\Large{\begin{varwidth}{9cm}
+    \begin{itemize}
+      \item Pointers to Python objects with $=$,
+      \item Can operate on them,
+      \item Can create new ones from old ones.
+    \end{itemize}\end{varwidth}
+}};
+
+\node[text=green!50!black] at (-19, 9.5) {\huge IF-STATEMENTS};
+\node at (-19.5, 7) {\Large{\begin{varwidth}{9cm}
+    \begin{itemize}
+      \item Conditionally execute portions of code once,
+      \item Checks a \textcolor{cyan!50!black}{Boolean} and then executes a code block.
+    \end{itemize}\end{varwidth}
+}};
+
+\node[text=blue!50!black] at (-19, -1.5) {\huge WHILE-LOOPS};
+\node at (-19.5, -4) {\Large{\begin{varwidth}{9cm}
+    \begin{itemize}
+      \item Conditionally execute portions code of repeatedly while condition is true,
+      \item Repeatedly checks a \textcolor{cyan!50!black}{Boolean} and then executes a code block.
+    \end{itemize}\end{varwidth}
+}};
+
+\node[text=magenta!50!black] at (-19, -12.5) {\huge FUNCTIONS};
+\node at (-19.5, -16) {\Large{\begin{varwidth}{9cm}
+    \begin{itemize}
+      \item Executable portion of code that can be used on demand,
+      \item Can be passed variables,
+      \item Indented portion of code is executed and can output Python objects with \texttt{return},
+      \item Defined with \texttt{def}.
+    \end{itemize}\end{varwidth}
+}};
+
+\node[text=cyan!50!black] at (19, 20.5) {\huge BOOLEANS};
+\node at (19, 17) {\Large{\begin{varwidth}{9cm}
+    \begin{itemize}
+      \item A type of \textcolor{red!50!black}{variable},
+      \item \texttt{True} or \texttt{False},
+      \item Can operate on them (\texttt{==}, \texttt{and}, \texttt{or}, \texttt{!=}, ...),
+      \item Can be created from other variables with operators (\texttt{==}, \texttt{!=}, \texttt{<}, \texttt{>}, \texttt{<=}, ...).
+    \end{itemize}\end{varwidth}
+}};
+
+\node[text=orange!50!black] at (19, 9.5) {\huge LISTS};
+\node at (19, 6.5) {\Large{\begin{varwidth}{9cm}
+    \begin{itemize}
+      \item Ordered collections of pointers (\textcolor{red!50!black}{variables}),
+      \item They have methods: \texttt{sort}, \texttt{min}, \texttt{len}, \texttt{max} ...,
+      \item Indexable.
+    \end{itemize}\end{varwidth}
+}};
+
+\node[text=yellow!50!black] at (19, -1.5) {\huge FOR-LOOPS};
+\node at (19, -4.5) {\Large{\begin{varwidth}{9cm}
+    \begin{itemize}
+      \item Repeatedly execute portions of code for every element in a collection,
+      \item Current element is usable as a variable,
+      \item Repeatedly executes indented code block.
+    \end{itemize}\end{varwidth}
+}};
+
+\node[text=black!50!black] at (19, -12.5) {\huge OTHER?};
+\node at (16, -15) {\LARGE Imports};
+\node at (21, -16) {\LARGE Comments};
+\node at (16, -17) {\LARGE Docstrings};
+\node at (21, -18) {\LARGE Default arguments};
+
+\end{tikzpicture}
+\end{document}

@@ -3,6 +3,10 @@ layout: page
 permalink: /chapters/session03/
 ---
 
+# Programming Concepts 1
+
+Below is Python code that simulates a queueing system. I should reflect the algorithm you developed in your groups.
+
 {% highlight python %}
 >>> import random
 
@@ -73,6 +77,18 @@ permalink: /chapters/session03/
 >>> get_proportion_waiting_over_limit()
 0.8528070471422103
 {% endhighlight %}
+
+Study the code above, ensure that you understand what it is doing, and how it relates to the overall task of simulating a queue. The image below points out some key Python concepts used in the code:
+
+![](/assets/concepts1-diagram-blank.svg)
+
+Use the sentences below to fill in the blank boxes in the image above with the sentences below. Match the key concept with some description of its use:
+
+![](/assets/concepts1-diagram-sentences.svg)
+
+You will have a print out of these sheets.
+
+***Complete the task by the next session,*** you may wish to look ahead in the course notes.
 
 {% highlight python %}
 

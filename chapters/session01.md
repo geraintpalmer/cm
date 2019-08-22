@@ -8,6 +8,43 @@ permalink: /chapters/session01/
 + Download and install Anaconda, either on a university machine or your personal computer if you have one.
 + Use pre-written code to solve a problem for Shed Josie.
 
+# Using Jupyter
+
++ If you are using a university computer, all relevant software will already be installed.
++ If you are using your own computer you will need to have installed the Anaconda software on your machine. [Please follow the instructions at he bottom of this page](/session00/).
++ On both university computers and your own machine, you will need to install the `Ciw` Python package. Do this (after installing anaconda), by opening up your command prompt and typing:
+
+  + `pip install ciw` or
+  + `pip install --user ciw` on a university computer.
+  
+  Tutors will be around to help with this.
+
+One the software is installed you will need to launch the software.
+Double click on 'Anaconda Navigator':
+
+<img src="/assets/navigator.png" width="70">{: .center-image }
+
+To write and run Python code, we will be using 'Jupyter Notebooks'. These are just one way to use Python, but is a popular tool when conducting data analysis, and is great for learning the language.
+Launch Jupyter:
+
+<img src="/assets/jupyter.png" width="70">{: .center-image }
+
+  + This will launch a local server in a web browser. *It is not connected to the internet*, and will still work if you are not connected to the web.
+  + A notebook contains a number of 'cells', in which code can be written and then run. After the cell is run, any output will be displayed below the cell.
+  + In a cell type `2 + 2`.
+  + In order to run this cell click on the 'run cell' button on the top menu bar:
+
+  <img src="/assets/run.png" width="500">{: .center-image }
+
+  
+  + You can also run cells by pressing the `shift`+`return` keys together.
+  + You should see the relevant output displayed below.
+  + To manually create a new cell, click on the 'insert new cell' button on the top menu bar:
+  
+  <img src="/assets/new-cell.png" width="500">{: .center-image }
+
+Now you are ready to begin using code!
+
 # Shed Josie
 
 Shed Josie is a chain of garden stores based in Grenoble. Customers arrive and join a queue to be served at a counter. When a staff member is available they begin serving the customer at the front of the queue.
@@ -40,11 +77,13 @@ The code below defines a Python function that can be used to calculate the propo
 ...     return sum(proportions) / len(proportions)
 {% endhighlight %}
 
+Copy this code into a new cell and run that cell.
+This function is a pre written function that you will usw to answer the questions below.
+Once the cell is run, that function will be in memory and available to use:
+
 ## Question 1
 
 Under the current system, managers believe that 78% of customers are waiting longer than 1 hour. The following code shows this.
-
-Click the cell and then click the run bottom above, or press the shift+return keys together, to run the sell.
 
 {% highlight python %}
 >>> get_proportion_waiting_over_limit(number_of_staff=10, limit=0.5)
@@ -55,19 +94,11 @@ Click the cell and then click the run bottom above, or press the shift+return ke
 
 If Shed Josie put on four extra members of staff, what proportion of the customers would wait longer than half an hour?
 
-Write your code in the cell below and run it as before.
-
-{% highlight python %}
->>> # Write your code here...
-{% endhighlight %}
-
 
 
 ## Question 3
 
 In this scenario, what proportion of the customers wait longer than fifteen minutes?
-
-Create a cell below using the create a cell button, write the appropriate code and run it.
 
 
 

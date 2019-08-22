@@ -3,7 +3,7 @@ layout: page
 permalink: /chapters/session04/
 ---
 
-# Goals
+## Goals
 + Understand the following programming concepts:
   + Variables
   + Booleans
@@ -14,9 +14,31 @@ permalink: /chapters/session04/
   + Functions
 + Practise using and writing code using these conceps.
 
-# Variables
+## Variables
 
-## Question 1
+Variable are pointers to Python objects such as integers, floats or strings.
+They are defined using `=`, for example:
+
+{% highlight python %}
+>>> my_variable = 6.2
+{% endhighlight %}
+
+We can look at this variable using `print`:
+
+{% highlight python %}
+>>> print(my_variable)
+6.2
+
+{% endhighlight %}
+
+In Jupyter, sometimes we do not need to use `print` if a variable is written on the final line of the cell, for example:
+
+{% highlight python %}
+>>> my_variable
+6.2
+{% endhighlight %}
+
+# Question 1
 a) Create two variables, one representing Alan's current amount of money (£1500), and one representing Alan's monthly wages (£762).
 
 
@@ -29,7 +51,7 @@ c) Alan has a pay rise. He now earns 10% more than before. Update the value of t
 
 
 
-## Question 2
+# Question 2
 
 a) Consider the following code:
 
@@ -51,9 +73,7 @@ b) Create the same four variables to correspond with your own name.
 
 
 
-# Booleans, If-statements & While-loops
-
-## Question 3
+## Booleans, If-statements & While-loops
 
 Boolean variables can be created from numerical variables using:
 + Equality `==`
@@ -75,11 +95,13 @@ False
 True
 {% endhighlight %}
 
+# Question 3
+
 Create all possible Boolean variables from the numbers 6 and 2.5.
 
 
 
-## Question 4
+# Question 4
 The following code gives the number of roots to a polynomial $$ax^2 + bx + c$$ with coefficients `a`, `b` and `c` respectively.
 
 {% highlight python %}
@@ -115,7 +137,7 @@ d) $$-7x^2 + 7x - 7$$
 
 
 
-## Question 5
+# Question 5
 
 Write some code that assigns a value to the variable `v` according to the Heavyside function:
 
@@ -129,7 +151,7 @@ $$
 
 
 
-## Question 6
+# Question 6
 An if-statement checks a Boolean, and runs the next indented bit of code if the Boolean is True. A while-loop checks a Boolean, and repeats the next indented bit of code *until* the Boolean becomes False.
 
 The following code will run 10 times:
@@ -158,7 +180,7 @@ Find two different ways of adapting the code so that it only runs 5 times.
 
 
 
-## Question 7
+# Question 7
 The code below verifies the following identity for $$n = 20$$:
 
 $$
@@ -181,7 +203,7 @@ Using a while-loop, verify this identity for every interger value of $$n$$ below
 
 
 
-## Question 8
+# Question 8
 In the same way as in Question 7, verify the following identity for the first 250 integers:
 
 $$
@@ -190,11 +212,12 @@ $$
 
 
 
-# Lists and For-loops
-
-## Question 9
+## Lists and For-loops
 
 Lists are ordered containers pointing to variables, defined with square brackets `a = [1, 1, 7]`. There are a number of operations we can use on lists, including `len(a)`, `max(a)`, `min(a)`, and `sorted(a)`. Elements of lists can be chosen by indexing, e.g. the first element of a list is `a[0]`, the second from last is `a[-2]`, and so on.
+
+
+# Question 9
 
 a) In no particular order, create a list of 8 of your favourite numbers.
 
@@ -228,7 +251,7 @@ h) Find the 3rd to 6th elements in the list.
 
 
 
-## Question 10
+# Question 10
 Items can be added to the back of a list using `.append(`:
 
 {% highlight python %}
@@ -255,7 +278,7 @@ Adapt the code above so that it gives a list of the first 15 square numbers that
 
 
 
-## Question 11
+# Question 11
 For loops allow up to repeat code for every item in a list. Let's print the square root of each of the numbers in the list `square_numbers`:
 
 {% highlight python %}
@@ -310,9 +333,8 @@ Rewrite the code for Question 8, using for loops instead of while loops.
 
 
 
-# Functions
+## Functions
 
-## Question 12
 Functions are executable pieces of code, that can be used on demand. They are themselves variables, defined using `def`. They are useful to avoid repeating writing code.
 
 Below is a function that finds the number of roots of a quadratic polynomial (see Question 4):
@@ -352,6 +374,8 @@ Now answering questions 4a) - 4d) is much easier, we simply call this function:
 0
 {% endhighlight %}
 
+# Question 12
+
 Write the Heaveyside function (Question 5) as a Python function, and use it to evaluate $$H(-4)$$, $$H(7)$$, $$H(3.14)$$, and $$H(0)$$.
 
 
@@ -364,7 +388,7 @@ Write the Heaveyside function (Question 5) as a Python function, and use it to e
 
 
 
-## Question 13
+# Question 13
 Write a function that checks the following identity for any given $$n$$:
 
 $$
@@ -373,7 +397,7 @@ $$
 
 
 
-## Question 14
+# Question 14
 This question asks you to write functions that do the following things:
 
 a) Takes a list of elements and outputs the same list in reverse,

@@ -3,7 +3,7 @@ layout: page
 permalink: /chapters/session08/
 ---
 
-# Goals
+## Goals
 + Understand the following programming concepts:
   + Recursion
   + List comprehension
@@ -11,9 +11,8 @@ permalink: /chapters/session08/
   + Classes, objects, attributes, and methods
 + Practise using and writing code using these conceps.
 
-# Recursion
+## Recursion
 
-## Question 1
 In mathemaics we can define some functions recursively, using a *base case* and a *recursion rule*. For example the factorial function:
 
 $$
@@ -30,15 +29,17 @@ We can also define Python functions in the same way:
 ...         return n * factorial(n - 1)
 {% endhighlight %}
 
+# Question 1
+
 a) Use this recursive function to create a list of the factorial of the first 7 integers.
 
 
 
-b) What happens when you try to use this to work out $$2000!$$? Why do you think this is?
+b) What happens when you try to use this to work out $$2000!$$, that is `factorial(2000)`? Why do you think this is?
 
 
 
-## Question 2
+# Question 2
 Write a recursive function that gives the $$n^{\text{th}}$$ Fibonacci number, given by the recursion rule:
 
 $$$$
@@ -52,9 +53,8 @@ Then using a for-loop, print out the first 12 Fibonacci numbers.
 
 
 
-# List comprehension & Dictionaries
+## List comprehension & Dictionaries
 
-## Question 3
 We have already see how to use for and while loops, along with append, to create lists. For example he list of the first 10 square numbers:
 
 {% highlight python %}
@@ -72,6 +72,8 @@ This bit of code can also be done is a shorter way, using something called *list
 >>> square_numbers
 [1, 4, 9, 16, 25, 36, 49, 64, 81, 100]
 {% endhighlight %}
+
+# Question 3
 
 a) Rewrite the following for loop as a list comprehension:
 
@@ -107,7 +109,7 @@ c) Rewrite the following for loop as a list comprehension:
 
 
 
-## Question 4
+# Question 4
 Another data structure that Python uses are dictionaries. Unlike lists these are *unordered*, but each value is associated with a key. For example:
 
 {% highlight python %}
@@ -171,7 +173,7 @@ Using either list comprehension or a for loop, create a list of the capital citi
 
 
 
-## Question 5
+# Question 5
 a) Create a dictionary that maps the countries above to the number of letters in their name.
 
 
@@ -180,7 +182,7 @@ b) Dictionaries can also be created in the same way as list comprehensions. Crea
 
 
 
-# Classes, Objects, Attributes and Methods
+## Classes, Objects, Attributes and Methods
 
 Objects as things that can store information.
 
@@ -206,7 +208,7 @@ Now we can create any number of students we like from this:
 
 {% highlight python %}
 >>> nikoleta
-<__main__.Student at 0x1072fc588>
+<__main__.Student at 0x1081a1278>
 {% endhighlight %}
 
 We can give those students attributes:
@@ -277,7 +279,7 @@ Let's redefine student so it has a method too. this method will increase the stu
 30
 {% endhighlight %}
 
-## Question 6
+# Question 6
 Now study the class below, which stores information about quadratic polynomials:
 
 {% highlight python %}
@@ -310,7 +312,8 @@ c) $$4x^2 - 4x + 1$$
 
 
 
-## Question 7
+# Question 7
+
 Adapt the class given in Question 6 so that it also has a method that gives the roots for the cases when there are two roots:
 
 $$
@@ -327,7 +330,7 @@ Find the roots for the three quadratics given in the previous question.
 
 
 
-## Question 8
+# Question 8
 Write a class to represent a rectangle. When creating an instance it needs to take in a width and a length. Write three methods, one that gives the area, one that gives the perimeter, and one that checks if the rectangle s square or not.
 
 Use this to create a list of all square objects with integer side length under 100.
@@ -339,7 +342,7 @@ Which squares have a larger perimeter than area?
 
 
 
-## Question 9
+# Question 9
 Write a class to represent a circle. When creating an instance it needs to take in a radius. Write two methods, one that gives the area, and one that gives the circumference.
 
 Use this to create a list of all circle objects with integer radius under 100.

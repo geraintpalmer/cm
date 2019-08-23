@@ -85,7 +85,7 @@ This algorithm has all five of Knuth's properties of an algorithm:
      + Step 2 ensures `R` is an *positive integer* smaller than both `A` and `B`,
      + Step 3 ensures that `A` and `B` are monotonically decreasing with each iteration,
      + Together these ensure that `A` is always greater than `B`,
-     + If either `B` will always decrease to a divisor of `A`, as 1 is a divisor of everything,
+     + `B` will always decrease to a divisor of `A`, as 1 is a divisor of everything,
      + Therefore the algorithm will always end.
 
 

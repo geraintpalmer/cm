@@ -87,7 +87,7 @@ There are various distributions of Python, we will use Anaconda which comes pack
 
 To install it on your personal machine follow these steps:
 
-  1. Go to this webpage: https://www.anaconda.com/download/.
+  1. Go to this webpage: [https://www.anaconda.com/download/](https://www.anaconda.com/download/).
   2. Identify and download the version of Python 3 for your operating system (Windows, Mac OSX, Linux). Run the installer.
 
 We will use a Jupyter notebook which runs in your browser.

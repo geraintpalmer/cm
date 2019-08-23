@@ -35,7 +35,8 @@ def convert_rst(nb_path, tags_to_ignore=["hide"]):
                 body += '\n'
                 if len(cell['outputs']) == 1:
                     if 'data' in cell['outputs'][0]:
-                        body += cell['outputs'][0]['data']['text/plain'][0]
+                        for l in cell['outputs'][0]['data']['text/plain']:
+                            body += l
                     elif 'text' in cell['outputs'][0]:
                         for l in cell['outputs'][0]['text']:
                             body += l

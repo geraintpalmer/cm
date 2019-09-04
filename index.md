@@ -10,7 +10,7 @@ Computational Methods
 + [Algorithmic thinking 1 - Simulation](/chapters/session02)
 + [Programming concepts 1](/chapters/session03)
 + [Programming concepts 1 - Excersises](/chapters/session04)
-+ [Using code 2 - Scipy](/chapters/session05)
++ [Using code 2 - NetworkX](/chapters/session05)
 + [Algorithmic thinking 2 - Optimisation](/chapters/session06)
 + [Programming concepts 2](/chapters/session07)
 + [Programming concepts 2 - Excersises](/chapters/session08)

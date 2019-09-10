@@ -5,7 +5,7 @@ permalink: /chapters/session03/
 
 ## Programming Concepts 1
 
-Below is Python code that simulates a queueing system. I should reflect the algorithm you developed in your groups.
+Below is Python code that simulates a queueing system. It should reflect the algorithm you developed in your groups.
 
 {% highlight python %}
 >>> import random

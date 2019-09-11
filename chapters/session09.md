@@ -73,7 +73,7 @@ But with proper variable names this task would be much easier:
 
 A great strength of Python is that there are a number of high quality pre-written code available for free to download.
 These are called libraries, and offer functions and objects to carry out common and specialised tasks.
-You have already used some of these, and the [final set of exercises](/chapters/session10/) takes you through the use of some libraries that will be particulary relevant to data science, operational research, and applied statistics.
+You have already used some of these, and the [final set of exercises](/cm/chapters/session10/) takes you through the use of some libraries that will be particulary relevant to data science, operational research, and applied statistics.
 
 To show the diversity and range of libraries available, and as a reference for your future studies, below is a large list of libraries and their main uses:
 

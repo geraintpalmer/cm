@@ -105,19 +105,15 @@ Rennes
 
 Study the code above, ensure that you understand what it is doing, and how it relates to the overall task of finding the dominating set of a graph. The image below points out some key Python concepts used in the code:
 
-![](/assets/concepts2-diagram-blank.svg)
+![](/cm/assets/concepts2-diagram-blank.svg)
 
 Use the sentences below to fill in the blank boxes in the image above with the sentences below. Match the key concept with some description of its use:
 
-![](/assets/concepts2-diagram-sentences.svg)
+![](/cm/assets/concepts2-diagram-sentences.svg)
 
 You will have a print out of these sheets.
 
 ***Complete the task by the next session,*** you may wish to look ahead in the course notes.
-
-{% highlight python %}
-
-{% endhighlight %}
 
 {% highlight python %}
 

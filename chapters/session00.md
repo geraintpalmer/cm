@@ -39,7 +39,7 @@ I hope this will help students gain a deeper appreciation of coding and computat
 
 Assessment will be 100% coursework.
 There is no exam.
-Further details can be found [here](/assessment/).
+Further details can be found [here](/cm/assessment/).
 
 
 ## Course Structure

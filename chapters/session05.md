@@ -18,7 +18,7 @@ For this session you will be using the library `networkx`. This may need to be i
 
 Shed Josie is a chain of garden stores based in Grenoble. They are going to embark on a national radio advertising campaign to promote their stores across the whole of France, using local radio station. They have identified 30 cities which much hear the radio advertisments. Furthermore they do not need to advertise on every local radio station, as cities close enough to one another can here eachothers' radio broadcasts:
 
-<img src="/assets/france_map.png" width="600">{: .center-image }
+<img src="/cm/assets/france_map.png" width="600">{: .center-image }
 
 The 30 cities form a network, and cities with an edge between them are close enough to listen to one another's radio broadcasts.
 
@@ -30,8 +30,8 @@ First let's download and read in some data.
 
 Download:
 
-+ [The list of 30 French cities](/assets/french_cities.txt)
-+ [The adjacency matrix](/assets/french_distances.csv)
++ [The list of 30 French cities](/cm/assets/french_cities.txt)
++ [The adjacency matrix](/cm/assets/french_distances.csv)
 
 Save these in the same folder as the notebook you are working on.
 
@@ -154,17 +154,17 @@ Toulouse
 
 That is:
 
-<img src="/assets/france_map_sol.png" width="600">{: .center-image }
+<img src="/cm/assets/france_map_sol.png" width="600">{: .center-image }
 
 
 ## Question 2
 
 Shed Josie want to begin an advertsing campaign in Italy. Repeat this analysis for Italy:
 
-+ [The list of 14 Italian cities](/assets/italian_cities.txt)
-+ [The adjacency matrix](/assets/italian_distances.csv)
++ [The list of 14 Italian cities](/cm/assets/italian_cities.txt)
++ [The adjacency matrix](/cm/assets/italian_distances.csv)
 
-<img src="/assets/italy_map.png" width="600">{: .center-image }
+<img src="/cm/assets/italy_map.png" width="600">{: .center-image }
 
 
 
@@ -173,10 +173,10 @@ Shed Josie want to begin an advertsing campaign in Italy. Repeat this analysis f
 
 Shed Josie want to begin an advertsing campaign in the USA. Repeat this analysis for the USA:
 
-+ [The list of 40 American cities](/assets/american_cities.txt)
-+ [The adjacency matrix](/assets/american_distances.csv)
++ [The list of 40 American cities](/cm/assets/american_cities.txt)
++ [The adjacency matrix](/cm/assets/american_distances.csv)
 
-<img src="/assets/usa_map.png" width="600">{: .center-image }
+<img src="/cm/assets/usa_map.png" width="600">{: .center-image }
 
 
 

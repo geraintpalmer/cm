@@ -185,24 +185,24 @@ Next we'll import pyplot, and create a line plot:
 
 >>> plt.plot(x_vals, y_vals)
 >>> plt.show()
-<matplotlib.figure.Figure at 0x115fb5fd0>
+<matplotlib.figure.Figure at 0x11540b0f0>
 {% endhighlight %}
 
 
 
-![](/assets/lineplot.png)
+![](/cm/assets/lineplot.png)
 
 Using the same data, we can make a scatterplot (and let's customise it a little):
 
 {% highlight python %}
 >>> plt.scatter(x_vals, y_vals, c='red', s=150, marker='x')
 >>> plt.show()
-<matplotlib.figure.Figure at 0x116070f60>
+<matplotlib.figure.Figure at 0x115651c50>
 {% endhighlight %}
 
 
 
-![](/assets/scatter.png)
+![](/cm/assets/scatter.png)
 
 A vast number of other types of plot can be produced which can't all be listed here. Below are examples of creating histograms and boxplots. First some random data is created (using the `random` library from the standard Python library):
 
@@ -214,22 +214,22 @@ A vast number of other types of plot can be produced which can't all be listed h
 {% highlight python %}
 >>> plt.hist(data)
 >>> plt.show()
-<matplotlib.figure.Figure at 0x116277c88>
+<matplotlib.figure.Figure at 0x1157b0d30>
 {% endhighlight %}
 
 
 
-![](/assets/hist.png)
+![](/cm/assets/hist.png)
 
 {% highlight python %}
 >>> plt.boxplot(data)
 >>> plt.show()
-<matplotlib.figure.Figure at 0x1164886a0>
+<matplotlib.figure.Figure at 0x115b4dda0>
 {% endhighlight %}
 
 
 
-![](/assets/boxplot.png)
+![](/cm/assets/boxplot.png)
 
 Finally matplotlib allows plots to be combined, customised and saved in a number of formats (experiment with .png, .svg and .pdf):
 
@@ -241,18 +241,18 @@ Finally matplotlib allows plots to be combined, customised and saved in a number
 >>> plt.title('My Histogram', fontsize=24)
 >>> plt.xlim(0, 10)
 >>> plt.savefig('histogram.pdf')
-<matplotlib.figure.Figure at 0x116749978>
+<matplotlib.figure.Figure at 0x1159ae358>
 {% endhighlight %}
 
 
 
-![](/assets/histogram.png)
+![](/cm/assets/histogram.png)
 
 # Pandas
 
 Pandas is Python's most popular library for data analysis and data manipulation. It is very useful for storing data in objects called 'data frames', which arrange data into useful and meaningful rows and columns. These data frames can be manipulated very efficiently for reshaping data, and performing data analyses on them.
 
-To show an example, let's read in a csv file (it can be downloaded from [here](/assets/titanic.csv) if you're following along), data of passengers on the Titanic:
+To show an example, let's read in a csv file (it can be downloaded from [here](/cm/assets/titanic.csv) if you're following along), data of passengers on the Titanic:
 
 {% highlight python %}
 >>> import pandas as pd
@@ -267,7 +267,7 @@ And look at the first few rows:
 >>> data.head()
 {% endhighlight %}
 
-![](/assets/pandas-head.png)
+![](/cm/assets/pandas-head.png)
 
 We can see that this data has 4 columns, the passengers' name, their cabin class, their age and sex, and whether they survived or not.
 
@@ -284,7 +284,7 @@ We'll use this to demonstrate some of pandas' data manipulation methods.
 >>> data.describe()  # Descriptive statistics for each numerical column of the data frame
 {% endhighlight %}
 
-![](/assets/pandas-describe.png)
+![](/cm/assets/pandas-describe.png)
 
 {% highlight python %}
 >>> data['Age'].head()  # just the 'Age' column (.head is used to get only the first 5 rows, to make the output easier to read)
@@ -321,7 +321,7 @@ Name: Age, dtype: float64
 >>> data[data['Age'] > 65]  # Filtering only those rows whose 'Age' value is greater than 65
 {% endhighlight %}
 
-![](/assets/pandas-filter.png)
+![](/cm/assets/pandas-filter.png)
 
 As you have seen above some of these methods can be combined, and pandas is very efficient at doing this.
 Sometimes simply reshaping data can give valuable insights, for example:
@@ -421,7 +421,7 @@ and this gives us the optimal values of $$x = -22$$ and $$y = 14$$.
 
 The final library we will look at is scikit-learn. This is Python's machine learning library. It can implement a wide number of machine learning algorithms, but here we'll just demonstrate a clustering algorithm.
 
-First import a data set to demonstrate on (which can be downloaded [here](/assets/plants.csv)):
+First import a data set to demonstrate on (which can be downloaded [here](/cm/assets/plants.csv)):
 
 
 
@@ -430,23 +430,23 @@ First import a data set to demonstrate on (which can be downloaded [here](/asset
 >>> data.head()
 {% endhighlight %}
 
-![](/assets/sklearn-unclustered.png)
+![](/cm/assets/sklearn-unclustered.png)
 
 This has observations of plants with their height and weight recorded. A plot will show more information:
 
 {% highlight python %}
 >>> plt.scatter(data['Height'], data['Weight'])
 >>> plt.show()
-<matplotlib.figure.Figure at 0x1169e9ba8>
+<matplotlib.figure.Figure at 0x1179a6320>
 {% endhighlight %}
 
 {% highlight python %}
 >>> plt.scatter(data['Height'], data['Weight'])
 >>> plt.savefig('../../assets/plants-unclustered.png')
-<matplotlib.figure.Figure at 0x116726550>
+<matplotlib.figure.Figure at 0x11fd1f470>
 {% endhighlight %}
 
-![](/assets/plants-unclustered.png)
+![](/cm/assets/plants-unclustered.png)
 
 We can see there are four natural groupings. We'll use k-means clustering to categorise these:
 
@@ -467,10 +467,14 @@ We can see there are four natural groupings. We'll use k-means clustering to cat
 {% highlight python %}
 >>> plt.scatter(data['Height'], data['Weight'], c=data['Cluster'], cmap='viridis')
 >>> plt.show()
-<matplotlib.figure.Figure at 0x1210005f8>
+<matplotlib.figure.Figure at 0x120501710>
 {% endhighlight %}
 
 
 
-![](/assets/plants-clustered.png)
+![](/cm/assets/plants-clustered.png)
+
+{% highlight python %}
+
+{% endhighlight %}
 

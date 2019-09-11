@@ -11,7 +11,7 @@ permalink: /chapters/session01/
 # Using Jupyter
 
 + If you are using a university computer, all relevant software will already be installed.
-+ If you are using your own computer you will need to have installed the Anaconda software on your machine. [Please follow the instructions at he bottom of this page](/session00/).
++ If you are using your own computer you will need to have installed the Anaconda software on your machine. [Please follow the instructions at he bottom of this page](/cm/session00/).
 + On both university computers and your own machine, you will need to install the `Ciw` Python package. Do this (after installing anaconda), by opening up your command prompt and typing:
 
   + `pip install ciw` or
@@ -51,7 +51,7 @@ Shed Josie is a chain of garden stores based in Grenoble. Customers arrive and j
 
 [Queue diagram]
 
-At the Rue de Paris store, customers on average arrive at a rate of 1.5 per hour, and are served ar a rate of 0.15 per hour. There are 10 members of staff on duty.
+At a particular shop, customers on average arrive at a rate of 1.5 per hour, and are served ar a rate of 0.15 per hour. There are 10 members of staff on duty.
 They have recently had a number of complaints as some of customers are waiting longer than half an hour to be served.
 
 Upper management would like to know how many servers are needed in order to ensure the number of customers waiting longer than half an hour falls below 1%.

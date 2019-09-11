@@ -208,7 +208,7 @@ Now we can create any number of students we like from this:
 
 {% highlight python %}
 >>> nikoleta
-<__main__.Student at 0x1081a1278>
+<__main__.Student at 0x10ac3a550>
 {% endhighlight %}
 
 We can give those students attributes:
@@ -235,16 +235,16 @@ All students take maths, so it would make sense if they had this attribute upon 
 {% endhighlight %}
 
 {% highlight python %}
->>> emma = Student(25)
+>>> lucy = Student(23)
 {% endhighlight %}
 
 {% highlight python %}
->>> emma.age
-25
+>>> lucy.age
+23
 {% endhighlight %}
 
 {% highlight python %}
->>> emma.subject
+>>> lucy.subject
 'Maths'
 {% endhighlight %}
 
@@ -262,20 +262,20 @@ Let's redefine student so it has a method too. this method will increase the stu
 {% endhighlight %}
 
 {% highlight python %}
->>> lorenzo = Student(29)
+>>> henry = Student(29)
 {% endhighlight %}
 
 {% highlight python %}
->>> lorenzo.age
+>>> henry.age
 29
 {% endhighlight %}
 
 {% highlight python %}
->>> lorenzo.have_a_birthday()
+>>> henry.have_a_birthday()
 {% endhighlight %}
 
 {% highlight python %}
->>> lorenzo.age
+>>> henry.age
 30
 {% endhighlight %}
 

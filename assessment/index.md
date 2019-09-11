@@ -40,16 +40,16 @@ The chosen topic was the Mann-Whitney U test.
 # How it will be marked
 
 + THE CODE (40%)
-  + **Correctness (10%)** The code is actually doing what you think it's doing.
-  + **Appropriateness (10%)** What you think the code is doing is what it needs to be doing.
-  + **Clarity & Readability (10%)** I know what the code is actually doing.
-  + **Organisation (10%)** I know what you want you want the code to do.
+  + **Correctness (10%)** The code is actually doing what you say it's doing.
+  + **Appropriateness (10%)** What you say the code is doing is what it needs to be doing.
+  + **Clarity & Readability (10%)** I understand what the code is actually doing.
+  + **Organisation (10%)** I understand what you say the code is doing.
 
 + THE REPORT (40%)
-  + **Organisation & Clarity (10%)** You have made it easy for me to understood your work.
+  + **Organisation & Clarity (10%)** You have made it easy for me to understand what you have done.
   + **Comprehension & Understanding (10%)** You have demonstrated that you understand the topic and your work well.
   + **Originality (10%)** You have strived to find an original topic, problem, or performed original experimentation.
-  + **Sources (10%)** Appropriate referencing and attribution of information and data.
+  + **Sources (10%)** You have used appropriate referencing and attribution of information and data.
 
 + OVERALL (20%)
   + *Reserved for any other business: penalties, exceptional work, my overall opinion of the work, how it all fits together, and so on.*

@@ -12,7 +12,7 @@ permalink: /chapters/session10/
 
 In Python, libraries are packages of pre-written code that usually contain functions and objects that can be imported into your own code. They are usually very efficient implementations of algorithms, models and procedures. In general if there is a library that does something you yourself would like to implement, it is better to use the library as it is probably well written, veified and tests, and efficient.
 
-In this course you have already used some libraries, [Ciw](https://ciw.readthedocs.io/en/latest/) for simulating queueing systems, [scipy](https://www.scipy.org/scipylib/index.html) for optimisation, [random](https://docs.python.org/2/library/random.html) for generating random numbers, and [math](https://docs.python.org/3/library/math.html) for mathematical operations and constants.
+In this course you have already used some libraries, [Ciw](https://ciw.readthedocs.io/en/latest/) for simulating queueing systems, [networkx](https://networkx.github.io/) for networks, [numpy](https://www.numpy.org/) was used to reading in file (but is used for much more than this!), [random](https://docs.python.org/2/library/random.html) for generating random numbers, and [math](https://docs.python.org/3/library/math.html) for mathematical operations and constants.
 
 There are two kinds of Python library:
 
@@ -185,7 +185,7 @@ Next we'll import pyplot, and create a line plot:
 
 >>> plt.plot(x_vals, y_vals)
 >>> plt.show()
-<matplotlib.figure.Figure at 0x11bc2fa20>
+<matplotlib.figure.Figure at 0x115fb5fd0>
 {% endhighlight %}
 
 
@@ -197,7 +197,7 @@ Using the same data, we can make a scatterplot (and let's customise it a little)
 {% highlight python %}
 >>> plt.scatter(x_vals, y_vals, c='red', s=150, marker='x')
 >>> plt.show()
-<matplotlib.figure.Figure at 0x11be03e48>
+<matplotlib.figure.Figure at 0x116070f60>
 {% endhighlight %}
 
 
@@ -214,7 +214,7 @@ A vast number of other types of plot can be produced which can't all be listed h
 {% highlight python %}
 >>> plt.hist(data)
 >>> plt.show()
-<matplotlib.figure.Figure at 0x11bc2f7f0>
+<matplotlib.figure.Figure at 0x116277c88>
 {% endhighlight %}
 
 
@@ -224,7 +224,7 @@ A vast number of other types of plot can be produced which can't all be listed h
 {% highlight python %}
 >>> plt.boxplot(data)
 >>> plt.show()
-<matplotlib.figure.Figure at 0x11c1723c8>
+<matplotlib.figure.Figure at 0x1164886a0>
 {% endhighlight %}
 
 
@@ -241,7 +241,7 @@ Finally matplotlib allows plots to be combined, customised and saved in a number
 >>> plt.title('My Histogram', fontsize=24)
 >>> plt.xlim(0, 10)
 >>> plt.savefig('histogram.pdf')
-<matplotlib.figure.Figure at 0x11c3867b8>
+<matplotlib.figure.Figure at 0x116749978>
 {% endhighlight %}
 
 
@@ -252,7 +252,7 @@ Finally matplotlib allows plots to be combined, customised and saved in a number
 
 Pandas is Python's most popular library for data analysis and data manipulation. It is very useful for storing data in objects called 'data frames', which arrange data into useful and meaningful rows and columns. These data frames can be manipulated very efficiently for reshaping data, and performing data analyses on them.
 
-To show an example, let's read in a csv file (it can be downloaded from [here]() if you're following along), data of passengers on the Titanic:
+To show an example, let's read in a csv file (it can be downloaded from [here](/assets/titanic.csv) if you're following along), data of passengers on the Titanic:
 
 {% highlight python %}
 >>> import pandas as pd
@@ -421,7 +421,7 @@ and this gives us the optimal values of $$x = -22$$ and $$y = 14$$.
 
 The final library we will look at is scikit-learn. This is Python's machine learning library. It can implement a wide number of machine learning algorithms, but here we'll just demonstrate a clustering algorithm.
 
-First import a data set to demonstrate on:
+First import a data set to demonstrate on (which can be downloaded [here](/assets/plants.csv)):
 
 
 
@@ -437,13 +437,13 @@ This has observations of plants with their height and weight recorded. A plot wi
 {% highlight python %}
 >>> plt.scatter(data['Height'], data['Weight'])
 >>> plt.show()
-<matplotlib.figure.Figure at 0x11e147ba8>
+<matplotlib.figure.Figure at 0x1169e9ba8>
 {% endhighlight %}
 
 {% highlight python %}
 >>> plt.scatter(data['Height'], data['Weight'])
 >>> plt.savefig('../../assets/plants-unclustered.png')
-<matplotlib.figure.Figure at 0x11c378198>
+<matplotlib.figure.Figure at 0x116726550>
 {% endhighlight %}
 
 ![](/assets/plants-unclustered.png)
@@ -467,7 +467,7 @@ We can see there are four natural groupings. We'll use k-means clustering to cat
 {% highlight python %}
 >>> plt.scatter(data['Height'], data['Weight'], c=data['Cluster'], cmap='viridis')
 >>> plt.show()
-<matplotlib.figure.Figure at 0x126c890f0>
+<matplotlib.figure.Figure at 0x1210005f8>
 {% endhighlight %}
 
 

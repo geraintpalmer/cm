@@ -26,7 +26,7 @@ Below is Python code for a greedy algorithm that finds the dominating set of a g
 ...         self.number_of_cities = len(self.cities)
 ...         self.adj_matrix = adj_matrix
 ...         self.best_score = len(self.cities)
-...         self.best_solution = np.array([1 for _ in self.cities])
+...         self.best_solution = np.array([1] *  self.number_of_cities)
 ...         self.num_broadcasts_to_try = np.linalg.matrix_rank(self.adj_matrix)
 ...     
 ...     def evalutate_solution(self, solution):
@@ -114,6 +114,10 @@ Use the sentences below to fill in the blank boxes in the image above with the s
 You will have a print out of these sheets.
 
 ***Complete the task by the next session,*** you may wish to look ahead in the course notes.
+
+{% highlight python %}
+
+{% endhighlight %}
 
 {% highlight python %}
 

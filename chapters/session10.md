@@ -462,7 +462,7 @@ We can see there are four natural groupings. We'll use k-means clustering to cat
 >>> data.head()
 {% endhighlight %}
 
-![](/assets/sklearn-clustered.png)
+![](/cm/assets/sklearn-clustered.png)
 
 {% highlight python %}
 >>> plt.scatter(data['Height'], data['Weight'], c=data['Cluster'], cmap='viridis')

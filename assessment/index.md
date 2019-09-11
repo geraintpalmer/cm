@@ -28,7 +28,7 @@ title: Assessment
 Here is an example of the three pages to be submitted.
 The chosen topic was the Mann-Whitney U test.
 
-+ [Example coursework.](/assessment/exmpl/example-coursework.pdf)
++ [Example coursework.](/cm/assessment/exmpl/example-coursework.pdf)
 
 # Topic Ideas
 

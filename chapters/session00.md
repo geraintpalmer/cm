@@ -18,7 +18,7 @@ Students will gain:
 
 Many courses in programming languages follow the following structure, where language syntax (the grammar and vocabulary of a programming language) is studied first; then algorithms are written by assembling bits of learned syntax together; and finally these written algorithms and procedures are used to solve problems:
 
-![](/assets/tranditional.svg)
+![](/cm/assets/tranditional.svg)
 
 This is a traditional method of learning programming, and can be successful.
 It does however have some barriers or bottlenecks: full syntax needs to be mastered, or the assembled algorithms may not be complete or efficient; and if the algorithms are incomplete they they won't be useful to solve problems.
@@ -30,7 +30,7 @@ In this course a different approach will be taken.
 
 This reverses the traditional approach: First we will use some pre-written code to solve some problems, developing an appreciation of why and how we *use* code and computer programs. Then we'll begin thinking about algorithms and procedures, attempting to develop some *algorithmic thinking* and communicating instructions in a clear, precise and logical fashion. Finally we will translate these algorithms to code by learning any Python syntax required.
 
-![](/assets/flipped.svg)
+![](/cm/assets/flipped.svg)
 
 I hope this will help students gain a deeper appreciation of coding and computational methods that simply learning syntax, and may better reflect how programming is used in a real world problem solving situation.
 
@@ -57,7 +57,7 @@ Contact time includes lessons in a lecture theatre, and time in the computer lab
 
 The schedule for the contact hours are as follows:
 
-![](/assets/structure.svg)
+![](/cm/assets/structure.svg)
 
 The first two weeks will focus on basic programming concepts such as variables, if statements, loops, and functions.
 Within this fortnight lessons will follow the reversed approach discussed earlier: using code, thinking algorithmically, writing code, and then understanding and practising using programming concepts in Python.

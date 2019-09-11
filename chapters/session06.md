@@ -14,7 +14,7 @@ As a reminder:
   + If a city is chosen to broadcast the advertisment, then all cities close by can also hear the advertisment ('close by' is determined by a network, or adjacency matrix).
   + What is cities should we broadcast from in order for the advertisment to reach every city, that would minismise the number of broadcasts?
 
-<img src="/assets/france_map.png" width="450"><img src="/assets/france_map_sol.png" width="450">
+<img src="/cm/assets/france_map.png" width="450"><img src="/cm/assets/france_map_sol.png" width="450">
 
 Thinking of this in terms of graphs, this is an example of finding a [dominating set](https://en.wikipedia.org/wiki/Dominating_set).
 You may find throughout your degree and beyond, that well defined and commonly studied problems have clever and specific methods of solving them.
@@ -48,7 +48,7 @@ Here is a reminder:
 
 An example:
 
-<img src="/assets/adj_matrix.png" width="350">{: .center-image }
+<img src="/cm/assets/adj_matrix.png" width="350">{: .center-image }
 
 $$
 \begin{array}{c c} &

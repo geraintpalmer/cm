@@ -22,26 +22,26 @@ permalink: /chapters/session01/
 One the software is installed you will need to launch the software.
 Double click on 'Anaconda Navigator':
 
-<img src="/assets/navigator.png" width="70">{: .center-image }
+<img src="/cm/assets/navigator.png" width="70">{: .center-image }
 
 To write and run Python code, we will be using 'Jupyter Notebooks'. These are just one way to use Python, but is a popular tool when conducting data analysis, and is great for learning the language.
 Launch Jupyter:
 
-<img src="/assets/jupyter.png" width="70">{: .center-image }
+<img src="/cm/assets/jupyter.png" width="70">{: .center-image }
 
   + This will launch a local server in a web browser. *It is not connected to the internet*, and will still work if you are not connected to the web.
   + A notebook contains a number of 'cells', in which code can be written and then run. After the cell is run, any output will be displayed below the cell.
   + In a cell type `2 + 2`.
   + In order to run this cell click on the 'run cell' button on the top menu bar:
 
-  <img src="/assets/run.png" width="500">{: .center-image }
+  <img src="/cm/assets/run.png" width="500">{: .center-image }
 
   
   + You can also run cells by pressing the `shift`+`return` keys together.
   + You should see the relevant output displayed below.
   + To manually create a new cell, click on the 'insert new cell' button on the top menu bar:
   
-  <img src="/assets/new-cell.png" width="500">{: .center-image }
+  <img src="/cm/assets/new-cell.png" width="500">{: .center-image }
 
 Now you are ready to begin using code!
 

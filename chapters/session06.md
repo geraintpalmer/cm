@@ -3,90 +3,99 @@ layout: page
 permalink: /chapters/session06/
 ---
 
-## Programming Concepts 2
+## Algorithmic Thinking 2 - Optimisation
 
-Below is Python code for a greedy algorithm that finds the dominating set of a graph. Notice that this is structured as a class, with attributes and methods.
 
-{% highlight python %}
->>> import numpy as np
->>> import random
+In the last session you used code that to solve the advertising campaign problem.
+As a reminder:
 
->>> class AdvertisingCampaign:
-...     def __init__(self, cities, adjacency_matrix):
-...         self.cities = cities
-...         self.number_of_cities = len(self.cities)
-...         self.adjacency_matrix = adjacency_matrix
-...         self.best_score = len(self.cities)
-...         self.best_solution = np.array([1 for _ in self.cities])
-...         self.number_broadcasts_to_try = np.linalg.matrix_rank(self.adjacency_matrix)
-...     
-...     def evalutate_solution(self, solution):
-...         coverage = np.matmul(solution, self.adjacency_matrix)
-...         if 0 in coverage:
-...             return self.number_of_cities
-...         return sum(solution)
-...     
-...     def new_solution(self):
-...         number_empty = self.number_of_cities - self.number_broadcasts_to_try
-...         sol = [1 for _ in range(self.number_broadcasts_to_try)] + [0 for _ in range(number_empty)]
-...         random.shuffle(sol)
-...         return np.array(sol)
-...     
-...     def optimise(self, num_itrs):
-...         for iteration in range(num_itrs):
-...             solution = self.new_solution()
-...             score = self.evalutate_solution(solution)
-...             if score <= self.best_score:
-...                 self.best_solution = solution
-...                 self.best_score = score
-...                 self.number_broadcasts_to_try = self.best_score - 1
-...     
-...     def print_solution(self):
-...         for i, city in enumerate(self.cities):
-...             if self.best_solution[i] == 1:
-...                 print(self.cities[i])
-{% endhighlight %}
+  + There are number of cities which we would like to broadcast an advertisment to.
+  + Each city has their own radio station to transmit the advertisment.
+  + If a city is chosen to broadcast the advertisment, then all cities close by can also hear the advertisment ('close by' is determined by a network, or adjacency matrix).
+  + What is cities should we broadcast from in order for the advertisment to reach every city, that would minismise the number of broadcasts?
 
-{% highlight python %}
->>> with open('french_cities.txt', 'r') as f:
-...     cities = f.read()
-...     cities_list = cities.split('\n')
->>> adjacency_matrix = np.genfromtxt('french_distances.csv', delimiter=',')
-{% endhighlight %}
+<img src="/assets/france_map.png" width="450"><img src="/assets/france_map_sol.png" width="450">
 
-{% highlight python %}
->>> R = AdvertisingCampaign(cities_list, adjacency_matrix)
->>> R.optimise(10000)
->>> R.print_solution()
-Avignon
-Bordeaux
-Brest
-La Rochelle
-Le Havre
-Nancy
-Nice
-Rouen
+Thinking of this in terms of graphs, this is an example of finding a [dominating set](https://en.wikipedia.org/wiki/Dominating_set).
+You may find throughout your degree and beyond, that well defined and commonly studied problems have clever and specific methods of solving them.
+Recognising that your problem can be generalised to one of these well studied problems, and then identifying the appropriate solution method, is a skill you will learn with experience.
+Otherwise, a more generic solution method is required.
 
-{% endhighlight %}
 
-{% highlight python %}
->>> R.best_score
-8
-{% endhighlight %}
+# Generic solution methods
 
-Study the code above, ensure that you understand what it is doing, and how it relates to the overall task of finding the dominating set of a graph. The image below points out some key Python concepts used in the code:
+If a specialised solution method is not known, we usually use a generic or naive method, or a clever version of this (called a [heuristic](https://optimization.mccormick.northwestern.edu/index.php/Heuristic_algorithms), you may study these further in your degree).
+In order to do this, we need to be able to *easily check how well a solution performs*, even if finding the optimal solution is difficult.
+Naive heuristics usually follow the following outline:
 
-![](/assets/concepts1-diagram-blank.svg)
+1. Evaluate initial guess at solution
+2. Change the solution slightly
+3. Evaluate solution
+4. If better than pervious best, call this previous best
+5. Go back to 2.
 
-Use the sentences below to fill in the blank boxes in the image above with the sentences below. Match the key concept with some description of its use:
+In today's task you will be thinking about how you can write an algorithm to solve the advertising campaign problem in this way. What does 'evaluate' mean in this case? What does a 'solution' look like? How would you 'change' the solution? Are there any other steps you could add that to make the algorithm better or more efficient?
 
-![](/assets/concepts1-diagram-sentences.svg)
+The heart of the problem is the adjacency matrix, let's recap.
 
-You will have a print out of these sheets.
 
-***Complete the task by the next session,*** you may wish to look ahead in the course notes.
+# Adjacency matrices
 
-{% highlight python %}
+You used adjacency matrices in the previous section.
+Here is a reminder:
 
-{% endhighlight %}
+> The adjacency matrix of a simple graph is a matrix with rows and columns labeled by graph vertices, with a 1 or 0 in position $$(v_i, v_j)$$ according to whether $$v_i$$ and $$v_j$$ are adjacent or not.
 
+An example:
+
+<img src="/assets/adj_matrix.png" width="350">{: .center-image }
+
+$$
+\begin{array}{c c} &
+\begin{array}{c c c c c c} A & B & C & D & E & F \\
+\end{array} 
+\\
+\begin{array}{c c c c c c}
+A \\
+B \\
+C \\
+D \\
+E \\
+F
+\end{array} 
+&
+\left(
+\begin{array}{c c c c c c}
+1 & 1 & 0 & 1 & 0 & 1 \\
+1 & 1 & 1 & 1 & 0 & 1 \\
+0 & 1 & 1 & 1 & 0 & 0 \\
+1 & 1 & 1 & 1 & 0 & 0 \\
+0 & 0 & 1 & 0 & 1 & 1 \\
+1 & 0 & 0 & 0 & 1 & 1 \\
+\end{array}
+\right)
+\end{array}
+$$
+
+Think about how this is connected to the advertising campaign problem.
+If an advert is broadcast in city A, then all cities with a 1 in the A row will be able to hear it.
+(Usually an adjacency matrix has 0s in the diagonal, but it has ben adapted in ths case for a more meaningful interpretation.)
+
+
+# Task
+
+**In groups of 4 or 5, write down *in English* a precise algorithm for solving the advertising campaign problem. It should take as inputs the adjacency matrix, and any other parameters you feel is needed. It should output a list of cities.**
+
+*You should consider:*
+
+  + Mathematically, what does a 'solution' look like?
+  + How would we generate or change solutions?
+  + What is the easiest way to check if a solution is **feasible** (it is a dominating set, it does cover every city)?
+  + How can we compare two feasible solutions?
+  + When should the algorithm stop?
+
+*Some **advanced** questions to consider:*
+
+  + What information do you need to store?
+  + What does the **rank** of the adjacency matrix give you? How could this help?
+  + Are you confident your solution is the *optimal*?

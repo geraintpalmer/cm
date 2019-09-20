@@ -1,5 +1,6 @@
 ---
 layout: page
+permalink: /chapters/session02/
 title: Algorithmic Thinking 1 - Simulation
 ---
 
@@ -105,8 +106,13 @@ In a queueing system:
 
 Think about:
 
-  + What event need to happen?
+  + What events need to happen?
   + In what order do these events need to occur?
   + How will you keep track of all the customer's arrival, service, and waiting times?
   + How will you decide when a customer begins service?
   + When does the simulation end?
+
+---
+
+[Previous](/cm/chapters/session01/) - [Home](/cm/) - [Next](/cm/chapters/session03/)
+{:style="text-align: right;"}

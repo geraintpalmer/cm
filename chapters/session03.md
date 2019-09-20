@@ -1,9 +1,8 @@
 ---
 layout: page
 permalink: /chapters/session03/
+title: Programming Concepts 1
 ---
-
-## Programming Concepts 1
 
 Below is Python code that simulates a queueing system. It should reflect the algorithm you developed in your groups.
 
@@ -75,7 +74,7 @@ Below is Python code that simulates a queueing system. It should reflect the alg
 
 {% highlight python %}
 >>> get_proportion_waiting_over_limit()
-0.8434450384314143
+0.8426850555949335
 {% endhighlight %}
 
 Study the code above, ensure that you understand what it is doing, and how it relates to the overall task of simulating a queue. The image below points out some key Python concepts used in the code:
@@ -86,9 +85,14 @@ Use the sentences below to fill in the blank boxes in the image above with the s
 
 ![](/cm/assets/concepts1-diagram-sentences.svg)
 
-You will have a print out of these sheets.
+A print out of these will be given in class.
 
 ***Complete the task by the next session,*** you may wish to look ahead in the course notes.
+
+---
+
+[Previous](/cm/chapters/session02/) - [Home](/cm/) - [Next](/cm/chapters/session04/)
+{:style="text-align: right;"}
 
 {% highlight python %}
 

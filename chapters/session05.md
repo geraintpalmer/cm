@@ -1,9 +1,10 @@
 ---
 layout: page
 permalink: /chapters/session05/
+title: Using Code 2 - NetworkX
 ---
 
-# Goals
+## Goals
 
 + Read in data from files.
 + Use pre written code to minimise advertising costs for Shed Josie.
@@ -180,6 +181,11 @@ Shed Josie want to begin an advertsing campaign in the USA. Repeat this analysis
 
 
 
+
+---
+
+[Previous](/cm/chapters/session04/) - [Home](/cm/) - [Next](/cm/chapters/session06/)
+{:style="text-align: right;"}
 
 {% highlight python %}
 

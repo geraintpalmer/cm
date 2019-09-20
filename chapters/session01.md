@@ -1,9 +1,10 @@
 ---
 layout: page
 permalink: /chapters/session01/
+title: Using Code 1 - Ciw
 ---
 
-# Goals
+## Goals
 
 + Download and install Anaconda, either on a university machine or your personal computer if you have one.
 + Use pre-written code to solve a problem for Shed Josie.
@@ -49,7 +50,7 @@ Now you are ready to begin using code!
 
 Shed Josie is a chain of garden stores based in Grenoble. Customers arrive and join a queue to be served at a counter. When a staff member is available they begin serving the customer at the front of the queue.
 
-[Queue diagram]
+![](/cm/assets/queue_diagram.svg)
 
 At a particular shop, customers on average arrive at a rate of 1.5 per hour, and are served ar a rate of 0.15 per hour. There are 10 members of staff on duty.
 They have recently had a number of complaints as some of customers are waiting longer than half an hour to be served.
@@ -119,6 +120,11 @@ Experiment with a number of scenarios and determine the least number of staff re
 By looking ahead at the class resources, attempt to automate the above.
 
 
+
+---
+
+[Previous](/cm/chapters/session00/) - [Home](/cm/) - [Next](/cm/chapters/session02/)
+{:style="text-align: right;"}
 
 {% highlight python %}
 

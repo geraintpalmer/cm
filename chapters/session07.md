@@ -1,9 +1,8 @@
 ---
 layout: page
 permalink: /chapters/session07/
+title: Programming Concepts 2
 ---
-
-## Programming Concepts 2
 
 Below is Python code for a greedy algorithm that finds the dominating set of a graph. Notice that this is structured as a class, with attributes and methods.
 
@@ -111,9 +110,14 @@ Use the sentences below to fill in the blank boxes in the image above with the s
 
 ![](/cm/assets/concepts2-diagram-sentences.svg)
 
-You will have a print out of these sheets.
+A print out of these will be given in class.
 
 ***Complete the task by the next session,*** you may wish to look ahead in the course notes.
+
+---
+
+[Previous](/cm/chapters/session06/) - [Home](/cm/) - [Next](/cm/chapters/session08/)
+{:style="text-align: right;"}
 
 {% highlight python %}
 

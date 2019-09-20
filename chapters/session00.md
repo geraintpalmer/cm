@@ -1,5 +1,6 @@
 ---
 layout: page
+permalink: /chapters/session00/
 title: Introduction
 ---
 
@@ -95,3 +96,8 @@ To open a local server find the Continuum navigator and click on Jupyter.
 You do not need to be connected to the internet to use this.
 
 [This video is a demo of using a notebook](https://www.youtube.com/watch?v=Zk0RhwCiiNA&feature=youtu.be) (taken from a different undergraduate course at Cardiff).
+
+---
+
+[Previous](/cm/chapters/session00/) - [Home](/cm/) - [Next](/cm/chapters/session01/)
+{:style="text-align: right;"}

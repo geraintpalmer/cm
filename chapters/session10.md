@@ -1,6 +1,7 @@
 ---
 layout: page
 permalink: /chapters/session10/
+title: Further Concepts & Libraries - Excersises
 ---
 
 ## Goals
@@ -167,7 +168,7 @@ array([ 0. ,  0.2,  0.4,  0.6,  0.8,  1. ,  1.2,  1.4,  1.6,  1.8,  2. ,
 
 This is the most popular Python library for producing plots. It is flexible enough to be able to create nearly most plots you will require in most styles, and it also has a simpler interface, pyplot, for quick and easy plotting.
 
-We'll demonstrate trhough examples.
+We'll demonstrate through examples.
 
 Before we begin, *in order for plots to display in Jupyter*, we need the follwing line of code (this is *only* needed in Jupyter):
 
@@ -185,7 +186,7 @@ Next we'll import pyplot, and create a line plot:
 
 >>> plt.plot(x_vals, y_vals)
 >>> plt.show()
-<matplotlib.figure.Figure at 0x11540b0f0>
+<matplotlib.figure.Figure at 0x10f2fdb00>
 {% endhighlight %}
 
 
@@ -197,7 +198,7 @@ Using the same data, we can make a scatterplot (and let's customise it a little)
 {% highlight python %}
 >>> plt.scatter(x_vals, y_vals, c='red', s=150, marker='x')
 >>> plt.show()
-<matplotlib.figure.Figure at 0x115651c50>
+<matplotlib.figure.Figure at 0x10f541940>
 {% endhighlight %}
 
 
@@ -214,7 +215,7 @@ A vast number of other types of plot can be produced which can't all be listed h
 {% highlight python %}
 >>> plt.hist(data)
 >>> plt.show()
-<matplotlib.figure.Figure at 0x1157b0d30>
+<matplotlib.figure.Figure at 0x10f6a1828>
 {% endhighlight %}
 
 
@@ -224,7 +225,7 @@ A vast number of other types of plot can be produced which can't all be listed h
 {% highlight python %}
 >>> plt.boxplot(data)
 >>> plt.show()
-<matplotlib.figure.Figure at 0x115b4dda0>
+<matplotlib.figure.Figure at 0x10f8c0c50>
 {% endhighlight %}
 
 
@@ -241,7 +242,7 @@ Finally matplotlib allows plots to be combined, customised and saved in a number
 >>> plt.title('My Histogram', fontsize=24)
 >>> plt.xlim(0, 10)
 >>> plt.savefig('histogram.pdf')
-<matplotlib.figure.Figure at 0x1159ae358>
+<matplotlib.figure.Figure at 0x10fb73208>
 {% endhighlight %}
 
 
@@ -391,7 +392,7 @@ First define this function as a Python function:
 {% highlight python %}
 >>> def f(args):
 ...     x, y = args
-...     return (1/3) * ((x + 1) ** 2) + ((y - 3) ** 2) - abs(x * y)
+...     return (1 / 3) * ((x + 1) ** 2) + ((y - 3) ** 2) - abs(x * y)
 {% endhighlight %}
 
 {% highlight python %}
@@ -437,13 +438,13 @@ This has observations of plants with their height and weight recorded. A plot wi
 {% highlight python %}
 >>> plt.scatter(data['Height'], data['Weight'])
 >>> plt.show()
-<matplotlib.figure.Figure at 0x1179a6320>
+<matplotlib.figure.Figure at 0x1118fbac8>
 {% endhighlight %}
 
 {% highlight python %}
 >>> plt.scatter(data['Height'], data['Weight'])
 >>> plt.savefig('../../assets/plants-unclustered.png')
-<matplotlib.figure.Figure at 0x11fd1f470>
+<matplotlib.figure.Figure at 0x10f7b4dd8>
 {% endhighlight %}
 
 ![](/cm/assets/plants-unclustered.png)
@@ -467,12 +468,17 @@ We can see there are four natural groupings. We'll use k-means clustering to cat
 {% highlight python %}
 >>> plt.scatter(data['Height'], data['Weight'], c=data['Cluster'], cmap='viridis')
 >>> plt.show()
-<matplotlib.figure.Figure at 0x120501710>
+<matplotlib.figure.Figure at 0x11a3bd0f0>
 {% endhighlight %}
 
 
 
 ![](/cm/assets/plants-clustered.png)
+
+---
+
+[Previous](/cm/chapters/session09/) - [Home](/cm/) - [Next](/cm/chapters/session10/)
+{:style="text-align: right;"}
 
 {% highlight python %}
 

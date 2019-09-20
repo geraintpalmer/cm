@@ -1,6 +1,7 @@
 ---
 layout: page
 permalink: /chapters/session08/
+title: Programming Concepts 2 - Excersises
 ---
 
 ## Goals
@@ -42,9 +43,9 @@ b) What happens when you try to use this to work out $$2000!$$, that is `factori
 # Question 2
 Write a recursive function that gives the $$n^{\text{th}}$$ Fibonacci number, given by the recursion rule:
 
-$$$$
+$$
 f_n = f_{n - 1} + f_{n - 2}
-$$$$
+$$
 
 and the base case $$f_0 = f_1 = 1$$.
 Then using a for-loop, print out the first 12 Fibonacci numbers.
@@ -60,7 +61,7 @@ We have already see how to use for and while loops, along with append, to create
 {% highlight python %}
 >>> square_numbers = []
 >>> for n in range(1, 11):
-...     square_numbers.append(n**2)
+...     square_numbers.append(n ** 2)
 >>> square_numbers
 [1, 4, 9, 16, 25, 36, 49, 64, 81, 100]
 {% endhighlight %}
@@ -68,7 +69,7 @@ We have already see how to use for and while loops, along with append, to create
 This bit of code can also be done is a shorter way, using something called *list comprehension*:
 
 {% highlight python %}
->>> square_numbers = [n**2 for n in range(1, 11)]
+>>> square_numbers = [n ** 2 for n in range(1, 11)]
 >>> square_numbers
 [1, 4, 9, 16, 25, 36, 49, 64, 81, 100]
 {% endhighlight %}
@@ -121,7 +122,7 @@ Another data structure that Python uses are dictionaries. Unlike lists these are
 ...     'Ireland': 'Dublin',
 ...     'The Netherlands': 'Amsterdam',
 ...     'Belgium': 'Brussels'
->>> }
+... }
 {% endhighlight %}
 
 {% highlight python %}
@@ -208,7 +209,7 @@ Now we can create any number of students we like from this:
 
 {% highlight python %}
 >>> nikoleta
-<__main__.Student at 0x10ac3a550>
+<__main__.Student at 0x1051b8f98>
 {% endhighlight %}
 
 We can give those students attributes:
@@ -355,6 +356,11 @@ Which circles have a larger circumference than area?
 
 
 
+
+---
+
+[Previous](/cm/chapters/session07/) - [Home](/cm/) - [Next](/cm/chapters/session09/)
+{:style="text-align: right;"}
 
 {% highlight python %}
 

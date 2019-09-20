@@ -1,6 +1,7 @@
 ---
 layout: page
 permalink: /chapters/session04/
+title: Programming Concepts 1 - Excersises
 ---
 
 ## Goals
@@ -97,7 +98,7 @@ True
 
 # Question 3
 
-Create all possible Boolean variables from the numbers 6 and 2.5.
+Create all possible Boolean variables from the numbers 6 and 2.5 (e.g. `6 == 2.5` is a Boolean variable).
 
 
 
@@ -117,6 +118,9 @@ The following code gives the number of roots to a polynomial $$ax^2 + bx + c$$ w
 ...     number_of_roots = 1
 >>> if discriminant > 0:
 ...     number_of_roots = 2
+
+>>> number_of_roots
+0
 {% endhighlight %}
 
 Use the above code to find the numbers of roots to the following polynomials:
@@ -423,6 +427,11 @@ d) Creates a list of the first $$m$$ prime numbers.
 
 
 
+
+---
+
+[Previous](/cm/chapters/session03/) - [Home](/cm/) - [Next](/cm/chapters/session05/)
+{:style="text-align: right;"}
 
 {% highlight python %}
 

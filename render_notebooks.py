@@ -27,6 +27,9 @@ def convert_rst(nb_path, tags_to_ignore=["hide"]):
                     if line[:4] == '    ':
                         body += '... '
                         body += line
+                    elif line[:4] in ['}', ')', ']']:
+                        body += '... '
+                        body += line
                     elif line == '\n':
                         body += '\n'
                     else:

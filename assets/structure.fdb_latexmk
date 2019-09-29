@@ -1,6 +1,6 @@
 # Fdb version 3
-["pdflatex"] 1566292601 "structure.tex" "structure.pdf" "structure" 1566292603
-  "/dev/null" 1566292603 0 d41d8cd98f00b204e9800998ecf8427e ""
+["pdflatex"] 1569787929 "structure.tex" "structure.pdf" "structure" 1569787931
+  "/dev/null" 1569787924 0 d41d8cd98f00b204e9800998ecf8427e ""
   "/usr/local/texlive/2017/texmf-dist/fonts/map/fontname/texfonts.map" 1480098670 3287 e6b82fe08f5336d4d5ebc73fb1152e87 ""
   "/usr/local/texlive/2017/texmf-dist/fonts/tfm/public/cm/cmss10.tfm" 1480098701 1316 b636689f1933f24d1294acdf6041daaa ""
   "/usr/local/texlive/2017/texmf-dist/fonts/tfm/public/cm/cmss17.tfm" 1480098701 1320 ed93d62c5f2c16343826001f03341dbc ""
@@ -105,8 +105,8 @@
   "/usr/local/texlive/2017/texmf-var/fonts/map/pdftex/updmap/pdftex.map" 1502130812 2377259 0b502a1d0ea6311856ea52c789c6d193 ""
   "/usr/local/texlive/2017/texmf-var/web2c/pdftex/pdflatex.fmt" 1502130901 4130343 be89eb784c911ca2eb4244de06579e34 ""
   "/usr/local/texlive/2017/texmf.cnf" 1502130802 577 2b71d4d888f9e5560b2e99985915a9fa ""
-  "structure.aux" 1566292602 8 a94a2480d3289e625eea47cd1b285758 ""
-  "structure.tex" 1566292600 4950 af842b6ea450b19c7938ee14ec1fae12 ""
+  "structure.aux" 1569787931 8 a94a2480d3289e625eea47cd1b285758 ""
+  "structure.tex" 1569787923 4939 022aa1bb71e7cfe2bc0079061796d70a ""
   (generated)
   "structure.pdf"
   "structure.aux"

@@ -47,8 +47,8 @@ Further details can be found [here](/cm/assessment/).
 
 This is a short module, lasting 5 weeks of contact time, but it is however worth 10 credits.
 For a 10 credit module you are expected to undertake at least 100 hours of study.
-Twenty of these hours will be schedules contact time in class.
-The remaining 80 hours of study if for you to use how you wish, however I recommend splitting your time like so:
+Twenty of these hours will be scheduled contact time in class.
+The remaining 80 hours of study are for you to use how you wish, however I recommend splitting your time like so:
 
   + 20 hours scheduled contact time
   + 30 hours working on the coursework

@@ -12,7 +12,7 @@ title: Using Code 1 - Ciw
 # Using Jupyter
 
 + If you are using a university computer, all relevant software will already be installed.
-+ If you are using your own computer you will need to have installed the Anaconda software on your machine. [Please follow the instructions at he bottom of this page](/cm/session00/).
++ If you are using your own computer you will need to have installed the Anaconda software on your machine. [Please follow the instructions at the bottom of this page](/cm/chapters/session00/).
 + On both university computers and your own machine, you will need to install the `Ciw` Python package. Do this (after installing anaconda), by opening up your command prompt and typing:
 
   + `pip install ciw` or
@@ -50,7 +50,7 @@ Now you are ready to begin using code!
 
 Shed Josie is a chain of garden stores based in Grenoble. Customers arrive and join a queue to be served at a counter. When a staff member is available they begin serving the customer at the front of the queue.
 
-![](/cm/assets/queue_diagram.svg)
+<img src="/cm/assets/queue_diagram.svg" width="500">{: .center-image }
 
 At a particular shop, customers on average arrive at a rate of 1.5 per hour, and are served ar a rate of 0.15 per hour. There are 10 members of staff on duty.
 They have recently had a number of complaints as some of customers are waiting longer than half an hour to be served.
@@ -65,8 +65,18 @@ The code below defines a Python function that can be used to calculate the propo
 {% highlight python %}
 >>> import ciw
 
->>> def get_proportion_waiting_over_limit(arrival_rate=1.5, service_rate=0.15, number_of_staff=2, limit=0.5, time_period=14*24, number_of_repetitions=100):
-...     N = ciw.create_network(arrival_distributions=[ciw.dists.Exponential(arrival_rate)], service_distributions=[ciw.dists.Exponential(service_rate)], number_of_servers=[number_of_staff])
+>>> def get_proportion_waiting_over_limit(
+...     arrival_rate=1.5,
+...     service_rate=0.15,
+...     number_of_staff=2,
+...     limit=0.5,
+...     time_period=14*24,
+...     number_of_repetitions=100
+>>> ):
+...     N = ciw.create_network(
+...         arrival_distributions=[ciw.dists.Exponential(arrival_rate)],
+...         service_distributions=[ciw.dists.Exponential(service_rate)],
+...         number_of_servers=[number_of_staff])
 ...     proportions = []
 ...     for repetition in range(number_of_repetitions):
 ...         ciw.seed(repetition)
@@ -79,7 +89,7 @@ The code below defines a Python function that can be used to calculate the propo
 {% endhighlight %}
 
 Copy this code into a new cell and run that cell.
-This function is a pre written function that you will usw to answer the questions below.
+This function is a pre written function that you will use to answer the questions below.
 Once the cell is run, that function will be in memory and available to use:
 
 ## Question 1

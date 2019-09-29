@@ -5,7 +5,7 @@ title: Further Concepts & Libraries - Excersises
 ---
 
 ## Goals
-+ Gain an awareness of Python libraries, their uses and potentials.
++ Gain an awareness of Python libraries, their uses and potential.
 + Be able to install (where appropriate) and import libraries.
 + Practise using and writing code using these libraries.
 
@@ -186,7 +186,7 @@ Next we'll import pyplot, and create a line plot:
 
 >>> plt.plot(x_vals, y_vals)
 >>> plt.show()
-<matplotlib.figure.Figure at 0x10f2fdb00>
+<matplotlib.figure.Figure at 0x10f995c18>
 {% endhighlight %}
 
 
@@ -198,7 +198,7 @@ Using the same data, we can make a scatterplot (and let's customise it a little)
 {% highlight python %}
 >>> plt.scatter(x_vals, y_vals, c='red', s=150, marker='x')
 >>> plt.show()
-<matplotlib.figure.Figure at 0x10f541940>
+<matplotlib.figure.Figure at 0x10fbf3a90>
 {% endhighlight %}
 
 
@@ -215,7 +215,7 @@ A vast number of other types of plot can be produced which can't all be listed h
 {% highlight python %}
 >>> plt.hist(data)
 >>> plt.show()
-<matplotlib.figure.Figure at 0x10f6a1828>
+<matplotlib.figure.Figure at 0x10fd3a9e8>
 {% endhighlight %}
 
 
@@ -225,7 +225,7 @@ A vast number of other types of plot can be produced which can't all be listed h
 {% highlight python %}
 >>> plt.boxplot(data)
 >>> plt.show()
-<matplotlib.figure.Figure at 0x10f8c0c50>
+<matplotlib.figure.Figure at 0x10ff78278>
 {% endhighlight %}
 
 
@@ -242,7 +242,7 @@ Finally matplotlib allows plots to be combined, customised and saved in a number
 >>> plt.title('My Histogram', fontsize=24)
 >>> plt.xlim(0, 10)
 >>> plt.savefig('histogram.pdf')
-<matplotlib.figure.Figure at 0x10fb73208>
+<matplotlib.figure.Figure at 0x110179da0>
 {% endhighlight %}
 
 
@@ -438,13 +438,13 @@ This has observations of plants with their height and weight recorded. A plot wi
 {% highlight python %}
 >>> plt.scatter(data['Height'], data['Weight'])
 >>> plt.show()
-<matplotlib.figure.Figure at 0x1118fbac8>
+<matplotlib.figure.Figure at 0x111f50710>
 {% endhighlight %}
 
 {% highlight python %}
 >>> plt.scatter(data['Height'], data['Weight'])
 >>> plt.savefig('../../assets/plants-unclustered.png')
-<matplotlib.figure.Figure at 0x10f7b4dd8>
+<matplotlib.figure.Figure at 0x1101e1d30>
 {% endhighlight %}
 
 ![](/cm/assets/plants-unclustered.png)
@@ -468,7 +468,7 @@ We can see there are four natural groupings. We'll use k-means clustering to cat
 {% highlight python %}
 >>> plt.scatter(data['Height'], data['Weight'], c=data['Cluster'], cmap='viridis')
 >>> plt.show()
-<matplotlib.figure.Figure at 0x11a3bd0f0>
+<matplotlib.figure.Figure at 0x11aa68208>
 {% endhighlight %}
 
 

@@ -90,7 +90,7 @@ To show the diversity and range of libraries available, and as a reference for y
 + [**FuzzyWuzzy**](https://chairnerd.seatgeek.com/fuzzywuzzy-fuzzy-string-matching-in-python/): For fuzzy string matching.
 + [**Gambit**](http://www.gambit-project.org/gambit13/index.html): For game theory.
 + [**GeoPandas**](http://geopandas.org/): For manipulating and plotting geospacial data and maps.
-+ [**itertools**](https://docs.python.org/3/library/itertools.html): For looping and combinatorics.
++ [**itertools**](https://docs.python.org/3/library/itertools.html): For combinatorics and iterators.
 + [**Keras**](https://keras.io/): For neural networks and deep learning.
 + [**kivy**](https://kivy.org/): For app development.
 + [**math**](https://docs.python.org/3/library/math.html): For mathematical functions and constants.
@@ -98,7 +98,7 @@ To show the diversity and range of libraries available, and as a reference for y
 + [**Nashpy**](https://nashpy.readthedocs.io/en/stable/): For game theory.
 + [**NetworkX**](https://networkx.github.io/): For graph theory and networks.
 + [**NumPy**](https://numpy.org/): For efficient linear algebra.
-+ [**pandas**](https://pandas.pydata.org/): For data frame, data manipulation, and data analysis.
++ [**pandas**](https://pandas.pydata.org/): For data frames, data manipulation, and data analysis.
 + [**PuLP**](https://pythonhosted.org/PuLP/): For optimisation and linear programming.
 + [**PyFlux**](https://pyflux.readthedocs.io/en/latest/): For time series analysis and prediction.
 + [**pygame**](https://www.pygame.org/): For making games.

@@ -8,8 +8,8 @@ title: Assessment
 
 # Brief
 
-+ Choose a procedure, algorithm or model from the domain of mathematics, operational research or statistics. (There are some ideas below, please discuss your idea with a tutor before beginning the work).
-+ Implement this in Python, writing it as a class or a function as appropriate.
++ Choose a procedure, algorithm or model from the domain of mathematics, operational research, and/or statistics. (There are some ideas below, please discuss your idea with myself or a tutor before beginning the work).
++ Implement this in Python. This may involve writing it as a class or a function as appropriate.
 + Use this implementation to solve an appropriate problem or to perform some appropriate experiment.
 + Write a two page report on your work.
 
@@ -17,11 +17,11 @@ title: Assessment
 
 + You will submit ***three pages***: 2 pages of written report *including references and any figures and tables;* and one page of code.
 + Any report exceeding 2 pages will incur a penalty, and only the first two pages will be marked.
-+ You are also to submit one page of code. Of course, the code you write in order to solve the problem or perform the experiments, including producing any figures, may exceed one page. Therefore *only include the most appropriate code*, this must include the function or class used to implement the chosen procedure, algorithm or model.
-+ You are free to use whatever report structure you wish. One recommended structure would be the following section titles:
-  + The Problem
-  + Solution Method
-  + Code Use & Discussion
++ You are also to submit one page of code. Of course, the code you write in order to solve the problem or perform the experiments, including producing any figures, may exceed one page. Therefore *only include the most appropriate code*, this must include the code used to implement the chosen procedure, algorithm or model.
++ You are free to use whatever report structure you wish. However a recommended structure would have the following sections:
+  1. The Problem
+  2. Solution Method
+  3. Code Use & Discussion
 
 # Example
 
@@ -30,7 +30,7 @@ The chosen topic was the Mann-Whitney U test.
 
 + [Example coursework.](/cm/assessment/exmpl/example-coursework.pdf)
 
-# Topic Ideas
+# Topic suggestions
 
 + [Numerical integration](https://en.wikipedia.org/wiki/Numerical_integration)
 + [Stable roommates problem](https://en.wikipedia.org/wiki/Stable_roommates_problem)
@@ -52,4 +52,4 @@ The chosen topic was the Mann-Whitney U test.
   + **Sources (10%)** You have used appropriate referencing and attribution of information and data.
 
 + OVERALL (20%)
-  + *Reserved for any other business: penalties, exceptional work, my overall opinion of the work, how it all fits together, and so on.*
+  + *Reserved for any other business: penalties, exceptional work, how it all fits together, and so on.*

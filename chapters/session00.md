@@ -58,7 +58,7 @@ Contact time includes lessons in a lecture theatre, and time in the computer lab
 
 The schedule for the contact hours are as follows:
 
-![](/cm/assets/structure.svg)
+![](/cm/assets/structure.png)
 
 The first two weeks will focus on basic programming concepts such as variables, if statements, loops, and functions.
 Within this fortnight lessons will follow the reversed approach discussed earlier: using code, thinking algorithmically, writing code, and then understanding and practising using programming concepts in Python.

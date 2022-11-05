@@ -33,7 +33,7 @@ This reverses the traditional approach: First we will use some pre-written code 
 
 ![](/cm/assets/flipped.svg)
 
-I hope this will help students gain a deeper appreciation of coding and computational methods that simply learning syntax, and may better reflect how programming is used in a real world problem solving situation.
+I hope this will help students gain a deeper appreciation of coding and computational methods than simply learning syntax, and developing an appreciation that specific programming languages separate from the computation itself, and are tools to implement the algorithms developed. This may better reflect how programming is used in a real world problem solving situation.
 
 
 ## Assessment
@@ -60,7 +60,7 @@ The schedule for the contact hours are as follows:
 
 ![](/cm/assets/structure.png)
 
-The first two weeks will focus on basic programming concepts such as variables, if statements, loops, and functions.
+The first two weeks will focus on programming concepts such as variables, if statements, loops, and functions.
 Within this fortnight lessons will follow the reversed approach discussed earlier: using code, thinking algorithmically, writing code, and then understanding and practising using programming concepts in Python.
 The second fortnight will follow the same structure as the first, and will focus on object orientated programming.
 Finally the fifth week will introduce some useful Python libraries, that is using pre-written code, coming full circle.

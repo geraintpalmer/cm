@@ -15,15 +15,15 @@ For this session you will be using the library `networkx`. This may need to be i
   + `pip install --user networkx` on a university computer.
 
 
-# Shed Josie
+# Josie's Shed
 
-Shed Josie is a chain of garden stores based in Grenoble. They are going to embark on a national radio advertising campaign to promote their stores across the whole of France, using local radio station. They have identified 30 cities which much hear the radio advertisments. Furthermore they do not need to advertise on every local radio station, as cities close enough to one another can here eachothers' radio broadcasts:
+Josie's Shed is a chain of garden stores based in Grenoble. They are going to embark on a national radio advertising campaign to promote their stores across the whole of France, using local radio station. They have identified 30 cities which much hear the radio advertisments. Furthermore they do not need to advertise on every local radio station, as cities close enough to one another can here eachothers' radio broadcasts:
 
 <img src="/cm/assets/france_map.png" width="600">{: .center-image }
 
 The 30 cities form a network, and cities with an edge between them are close enough to listen to one another's radio broadcasts.
 
-Your task is to identify the minimum number of cities Shed Josie needs to broadcats from, and identify which cities to broadcast from, in order to reach all 30 cities in France.
+Your task is to identify the minimum number of cities Josie's Shed needs to broadcats from, and identify which cities to broadcast from, in order to reach all 30 cities in France.
 
 ## Question 1
 
@@ -133,7 +133,7 @@ Now identifying which cities to broadcast from is a common problem when framed a
 {0, 1, 2, 4, 7, 9, 11, 19, 27, 29}
 {% endhighlight %}
 
-So Shed Josie only need to broadcast in 10 cities to reach every one of the 30 targeted cities.
+So Josie's Shed only needs to broadcast in 10 cities to reach every one of the 30 targeted cities.
 
 What are those cities?
 

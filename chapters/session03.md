@@ -54,7 +54,7 @@ Below is Python code that simulates a queueing system. It should reflect the alg
 ...     limit=0.5,
 ...     time_period=31*24,
 ...     number_of_repetitions=100,
->>> ):
+... ):
 ...     """
 ...     Gives the average proportion of customers waiting over a given limit,
 ...     over number_of_repetitions repetitions. The parameters are:

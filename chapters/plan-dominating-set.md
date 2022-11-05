@@ -13,14 +13,14 @@
 ...     'Lyon', 'Marseilles', 'Montpellier', 'Nancy', 'Nantes', 'Nice',
 ...     'Orleans', 'Paris', 'Perpignon', 'Poitiers', 'Reims', 'Rennes',
 ...     'Rouen', 'Stranbourg', 'Toulon', 'Toulouse'
->>> ])
+... ])
 
 {% endhighlight %}
 
 {% highlight python %}
 >>> cities_italy = sorted([
 ...     'Rome', 'Milan', 'Florence', 'Verona', 'Venice', 'Salerno', 'Lecce', 'Bari', 'Pisa', 'Ravenna', 'Genoa', 'Bologna', 'Treviso', 'Catanzaro'
->>> ])
+... ])
 {% endhighlight %}
 
 {% highlight python %}
@@ -31,7 +31,7 @@
 ...     'Cleveland', 'Las Vegas', 'Cincinnati', 'Washington D.C.', 'Auston', 'Oklahoma City', 'Detroit',
 ...     'Santa Fe', 'Colorado Springs', 'Portland', 'Jacksonville', 'Charlotte', 'Des Moines', 'Richmond',
 ...     'Buffalo', 'Tucson', 'St Louis'
->>> ])
+... ])
 {% endhighlight %}
 
 {% highlight python %}

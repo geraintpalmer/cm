@@ -70,7 +70,9 @@ How would you ensure that the variable `full_name` included spaces between the n
 
 
 
-b) Create the same four variables to correspond with your own name.
+
+
+b) Create the same three (or more if required) variables to correspond with your own name.
 
 
 
@@ -178,7 +180,7 @@ I have run 10 times.
 
 {% endhighlight %}
 
-Find two different ways of adapting the code so that it only runs 5 times.
+Find _two different ways_ of adapting the code so that it only runs 5 times.
 
 
 
@@ -208,7 +210,7 @@ Using a while-loop, verify this identity for every interger value of $$n$$ below
 
 
 # Question 8
-In the same way as in Question 7, verify the following identity for the first 250 integers:
+In the same way as in Question 7, verify the following identity for the first 250 natural numbers:
 
 $$
 \sum_{i=0}^{n} i^3 = \frac{\left(n^2 + n\right)^2}{4}
@@ -398,6 +400,10 @@ Write a function that checks the following identity for any given $$n$$:
 $$
 \sum_{i=0}^{n} i^2 = \frac{n(n+1)(2n+1)}{6}
 $$
+
+Use the function to check the identity for $$n = 3881$$.
+
+
 
 
 

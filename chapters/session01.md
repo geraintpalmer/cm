@@ -46,9 +46,9 @@ Launch Jupyter:
 
 Now you are ready to begin using code!
 
-# Shed Josie
+# Josie's Shed
 
-Shed Josie is a chain of garden stores based in Grenoble. Customers arrive and join a queue to be served at a counter. When a staff member is available they begin serving the customer at the front of the queue.
+Josie's Shed is a chain of garden stores based in Grenoble. Customers arrive and join a queue to be served at a counter. When a staff member is available they begin serving the customer at the front of the queue.
 
 <img src="/cm/assets/queue_diagram.svg" width="500">{: .center-image }
 
@@ -71,8 +71,8 @@ The code below defines a Python function that can be used to calculate the propo
 ...     number_of_staff=2,
 ...     limit=0.5,
 ...     time_period=14*24,
-...     number_of_repetitions=100
->>> ):
+...     number_of_repetitions=100,
+... ):
 ...     N = ciw.create_network(
 ...         arrival_distributions=[ciw.dists.Exponential(arrival_rate)],
 ...         service_distributions=[ciw.dists.Exponential(service_rate)],
@@ -94,7 +94,7 @@ Once the cell is run, that function will be in memory and available to use:
 
 ## Question 1
 
-Under the current system, managers believe that 78% of customers are waiting longer than 1 hour. The following code shows this.
+Under the current system, managers believe that 78% of customers are waiting longer than half an hour. The following code shows this.
 
 {% highlight python %}
 >>> get_proportion_waiting_over_limit(number_of_staff=10, limit=0.5)
@@ -103,7 +103,7 @@ Under the current system, managers believe that 78% of customers are waiting lon
 
 ## Question 2
 
-If Shed Josie put on four extra members of staff, what proportion of the customers would wait longer than half an hour?
+If Josie's Shed put on four extra members of staff, what proportion of the customers would wait longer than half an hour?
 
 
 
@@ -125,9 +125,19 @@ Experiment with a number of scenarios and determine the least number of staff re
 
 
 
+## Question 5
+
+Experiment with a number of scenarios and determine the least number of staff required such that no more than 1% of customers wait longer than five minutes.
+
+
+
+
+
 ## Further work
 
 By looking ahead at the class resources, attempt to automate the above.
+
+
 
 
 
@@ -135,8 +145,4 @@ By looking ahead at the class resources, attempt to automate the above.
 
 [Previous](/cm/chapters/session00/) - [Home](/cm/) - [Next](/cm/chapters/session02/)
 {:style="text-align: right;"}
-
-{% highlight python %}
-
-{% endhighlight %}
 

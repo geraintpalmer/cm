@@ -4,6 +4,8 @@ permalink: /chapters/session02/
 title: Algorithmic Thinking 1 - Simulation
 ---
 
+<script src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML" type="text/javascript"></script>
+
 
 In order to be able to tell a computer how to do something, we need to ourselves be able to think like a computer.
 This means thinking in clear and precise logical steps made up from well defined (and not impossible) activities, in meaningful chronological order.
@@ -15,9 +17,9 @@ I could make this clearer by writing out the instructions step by step:
 1. Wake up when alarm clock goes off.
 2. Have a shower.
 3. Put on clothes.
-4. Put on coat if raining, or take coat in bag.
+4. Put on coat if needed.
 5. Walk to coffee shop.
-6. Buy coffee, croissant and banana.
+6. Buy breakfast.
 7. Eat breakfast.
 8. Walk to the office.
 

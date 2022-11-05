@@ -27,7 +27,7 @@ def convert_rst(nb_path, tags_to_ignore=["hide"]):
                     if line[:4] == '    ':
                         body += '... '
                         body += line
-                    elif line[:4] in ['}', ')', ']', '):']:
+                    elif line[0] in ['}', ')', ']']:
                         body += '... '
                         body += line
                     elif line == '\n':
@@ -76,4 +76,5 @@ if __name__ == "__main__":
     nb_dir = pathlib.Path("chapters/nbs")
     worksheet_paths = sorted(nb_dir.glob("*ipynb"))
     for worksheet in worksheet_paths:
+        print(worksheet)
         convert_rst(worksheet)

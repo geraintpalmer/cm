@@ -15,15 +15,15 @@ title: Assessment
 
 # Further Details
 
-+ You will submit ***a maximum of two pages*** *including references and any figures and tables;* ***and*** a fully documented Jupyter Notebook.
-+ If you exceed 2 pages only the first two pages will be read and the rest discarded.
++ You will submit ***a maximum of three pages*** *including any references, figures and tables;* ***and*** one fully documented Jupyter Notebook.
++ If you exceed 3 pages only the first three pages will be read and the rest discarded.
 + You are free to use whatever report structure you wish.
-+ You will also submit a Jupyter Notebook including all code used to solve the problem. This includes any functions or classes used to write the heuristic algorithm, the use of those functions or classes to solve the problem, and any analysis.
++ You will also submit a single Jupyter Notebook including all code used to solve the problem. This includes any functions or classes used to write the heuristic algorithm, the use of those functions or classes to solve the problem, and any analysis.
 + ***A marker should be able to exactly reproduce all reported results using the provided Jupyter Notebook.***
 
 # Example
 
-Here is an example of a two page report and Jupyter Notebook for the dominating set problem (as seen in [Session 5](/cm/chapters/session05/)):
+Here is an example report and Jupyter Notebook for the dominating set problem (as seen in [Session 5](/cm/chapters/session05/)):
 
 + [Example report.](/cm/assessment/example/example.pdf)
 + [Example notebook.](/cm/assessment/example/example.ipynb)

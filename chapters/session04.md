@@ -4,6 +4,8 @@ permalink: /chapters/session04/
 title: Programming Concepts 1 - Excersises
 ---
 
+<script src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML" type="text/javascript"></script>
+
 ## Goals
 + Understand the following programming concepts:
   + Variables

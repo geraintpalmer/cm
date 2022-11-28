@@ -4,6 +4,9 @@ permalink: /chapters/session05/
 title: Using Code 2 - NetworkX
 ---
 
+<script src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML" type="text/javascript"></script>
+
+
 ## Goals
 
 + Read in data from files.

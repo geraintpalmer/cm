@@ -4,6 +4,8 @@ permalink: /chapters/session08/
 title: Programming Concepts 2 - Excersises
 ---
 
+<script src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML" type="text/javascript"></script>
+
 ## Goals
 + Understand the following programming concepts:
   + Recursion

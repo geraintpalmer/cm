@@ -4,6 +4,9 @@ permalink: /chapters/session06/
 title: Algorithmic Thinking 2 - Optimisation
 ---
 
+<script src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML" type="text/javascript"></script>
+
+
 In the last session you used code that to solve the advertising campaign problem.
 As a reminder:
 

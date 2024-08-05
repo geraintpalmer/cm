@@ -12,13 +12,13 @@ title: Re-assessment
 # Kruskal's Algorithm
 Start with a set of **N** cities and distance matrix.
 + Begin with two empty lists:
-  + `MST_edges' -  containing the edges of the minimum spanning tree,
-  + `MST_cities' - containing cities incident to the edges in the minimum spanning tree
-+ While `MST_edges' does not contain (**V - 1**) edges:
+  + `MST_edges` -  containing the edges of the minimum spanning tree,
+  + `MST_cities` - containing cities incident to the edges in the minimum spanning tree
++ While `MST_edges` does not contain (**V - 1**) edges:
     + Search the distance matrix for the shortest edge.
-    + If that edge does not form a loop (that _both_ cities incident to that edge are not in `MST_cities'):
+    + If that edge does not form a loop (that _both_ cities incident to that edge are not in `MST_cities`):
         + Add edge to `MST_edges'
-        + Add any city incident to that edge _not_ already in `MST_cities' to `MST_cities'
+        + Add any city incident to that edge _not_ already in `MST_cities` to `MST_cities`
     + Relabel that edge distance in the distance matrix as infinity
 
 
